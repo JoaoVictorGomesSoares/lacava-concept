@@ -5,8 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 
+    font-family: var(--fontpadrao);
     font-size: medium;
     font-weight: normal;
+
+    list-style: none;
     text-decoration: none;
 }
 
@@ -23,6 +26,5 @@
     --regular: #101010;
     --black: #000;
 
-    --fontpadrao: Arial, Helvetica, Verdana, Sans-serif;
+    --fontpadrao: arial, helvetica, verdana, sans-serif;
 }
-

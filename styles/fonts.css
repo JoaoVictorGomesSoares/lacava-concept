@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url("fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url("fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'PoppinsLight';
+    src: url("fonts/Poppins/Poppins-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'PoppinsItalic';
+    src: url("fonts/Poppins/Poppins-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Questrial';
+    src: url("fonts/Questrial/Questrial.ttf") format("truetype");
+}
