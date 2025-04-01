@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: medium;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+:root {
+    --white: #fff;
+    --lgray: #d3d3d3;
+    --silver: #c0c0c0;
+    --rgray: #808080;
+    --dgray: #696969;
+    --lchumbo: #545454;
+    --rchumbo: #3c3c3c;
+    --dchumbo: #2c2c2c;
+    --lblack: #171717;
+    --regular: #101010;
+    --black: #000;
+
+    --fontpadrao: Arial, Helvetica, Verdana, Sans-serif;
+}
+
