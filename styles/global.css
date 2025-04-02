@@ -15,6 +15,7 @@
 
 :root {
     --white: #fff;
+    --dimwhite: #eeeeee;
     --lgray: #d3d3d3;
     --silver: #c0c0c0;
     --rgray: #808080;
@@ -25,8 +26,11 @@
     --lblack: #171717;
     --regular: #0e0e0e;
     --black: #000;
+    --preço: #ff0000;
 
     --fontpadrao: arial, helvetica, verdana, sans-serif;
+
+    --sombra: #00000066;
 }
 
 .letreiro {
@@ -80,6 +84,9 @@ header {
     padding: 15px 70px;
 
     ul {
+        max-width: 1300px;
+        margin: auto;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -102,6 +109,8 @@ header {
             font-family: "Poppins", sans-serif;
             font-weight: 400;
             font-style: normal;
+
+            letter-spacing: 1px;
 
             opacity: 0.7;
             transition: .3s;
@@ -137,6 +146,9 @@ header {
 
 picture {
     div {
+        max-width: 1600px;
+        margin: auto;
+
         background-image: url("../assets/images/picture/foto-capaN1.jpeg");
         background-position: left center;
         background-size: cover;
@@ -147,7 +159,173 @@ picture {
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
 
-        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 8px 20px var(--sombra);
+
+        margin-bottom: 50px;
     }
 }
 
+section {
+    margin: auto;
+    max-width: 1600px;
+
+    h1, #subtitulo-section {
+        width: 1200px;
+        margin: auto;
+    }
+    h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30pt;
+
+        margin-bottom: 30px;
+    }
+    #subtitulo-section {
+        margin-bottom: 50px;
+
+        display: flex;
+        justify-content: space-between;
+
+        p, a, div {                
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 15pt;
+            color: var(--black);
+        }
+        a {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            p {
+                letter-spacing: 1px;
+
+                position: relative;
+            }
+            p:after {
+                content: '';
+
+                position: absolute;
+
+                width: 100%;
+                height: 1px;
+
+                background-color: var(--black);
+
+                left: 0;
+                bottom: 0;
+
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform .3s;
+            }
+            p:hover:after {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+
+            div {
+                background-color: var(--silver);
+                width: 35px;
+                height: 35px;
+
+                border-radius: 50%;
+
+                padding-left: 13px;
+                padding-top: 3px;
+
+                transition: .3s;
+            }
+            div:hover {
+                background-color: var(--regular);
+                color: var(--white);
+            }
+        }
+    }
+}
+
+.cinco-produtos {
+    max-width: 1300px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    li:hover {
+        cursor: pointer;
+    }
+    
+    .foto-produto {
+        width: 200px;
+        height: 200px;
+        
+        background-size: cover;
+        background-position: center center;
+
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        transition: .5s;
+    }
+    .foto-produto:hover {
+        cursor: pointer;
+
+        background-color: var(--dimwhite);
+    }
+    p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        text-align: center;
+    }
+    .nome, .valor {
+        font-size: 15pt;
+        letter-spacing: 2px;
+    }
+    .nome {
+        font-weight: bold;
+        color: var(--black);
+    }
+    .valor {
+        color: var(--preço);
+    }
+    .parcelas,.estoque {
+        color: var(--dchumbo);
+        font-style: italic;
+    }
+
+    #produto1 {
+        background-image: url("../assets/images/picture/imagem_oculos1.png");
+    }
+    #produto1:hover {
+        background-image: url("../assets/images/picture/modelo-oculos1.png");
+    }
+    #produto2 {
+        background-image: url("../assets/images/picture/imagem_oculos2.png");
+    }
+    #produto2:hover {
+        background-image: url("../assets/images/picture/modelo-oculos2.png");
+    }
+    #produto3 {
+        background-image: url("../assets/images/picture/imagem_oculos3.png");
+    }
+    #produto3:hover {
+        background-image: url("../assets/images/picture/modelo-oculos3.png");
+    }
+    #produto4 {
+        background-image: url("../assets/images/picture/imagem_oculos4.png");
+    }
+    #produto4:hover {
+        background-image: url("../assets/images/picture/modelo-oculos4.png");
+    }
+    #produto5 {
+        background-image: url("../assets/images/picture/imagem_oculos5.png");
+    }
+    #produto5:hover {
+        background-image: url("../assets/images/picture/modelo-oculos5.png");
+    }
+}
