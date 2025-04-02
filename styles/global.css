@@ -31,39 +31,48 @@
     --fontpadrao: arial, helvetica, verdana, sans-serif;
 
     --sombra: #00000066;
+
+    --gap-letreiro: 2.5vw;
 }
 
 .letreiro {
     display: flex;
 
-    padding: 15px 0px;
+    padding-block: 15px;
 
     background-color: var(--regular);
 
     user-select: none;
+
     overflow-x: hidden;
+
+    gap: var(--gap-letreiro);
 
     ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        min-width: 130%;
-
         animation: scroll 20s linear infinite;
 
-        li {
-            flex-shrink: 0;
+        min-width: 100%;
 
+        list-style: none;
+
+        gap: var(--gap-letreiro);
+
+        flex-shrink: 0;
+
+        li {
             color: var(--white);
 
             span {
-                margin-inline-end: 5vw;
-
                 font-size: 10pt;
                 font-family: "Poppins", sans-serif;
                 font-weight: 400;
                 font-style: normal;
+
+                margin-inline: 2.5vw;
             }
         }
     }
@@ -75,7 +84,7 @@
 }
 @keyframes scroll {
     to {
-        transform: translateX(calc(-100%));
+        transform: translateX(calc(-100% - var(--gap-letreiro)));
     }
 }
 
