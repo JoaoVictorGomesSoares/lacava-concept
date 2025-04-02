@@ -77,11 +77,7 @@
         }
     }
 }
-.letreiro:hover {    
-    ul {
-        animation-play-state: paused;
-    }
-}
+
 @keyframes scroll {
     to {
         transform: translateX(calc(-100% - var(--gap-letreiro)));
@@ -158,11 +154,15 @@ picture {
         max-width: 1600px;
         margin: auto;
 
+        width: 100%;
+    }
+
+    #fundo-principal {
+
         background-image: url("../assets/images/picture/foto-capaN1.jpeg");
-        background-position: left center;
+        background-position: center center;
         background-size: cover;
 
-        width: 100%;
         height: 750px;
         
         border-bottom-left-radius: 30px;
@@ -172,11 +172,51 @@ picture {
 
         margin-bottom: 50px;
     }
+
+    #fundo-secundario {
+        background-image: url("../assets/images/picture/foto-capaN2.png");
+        background-position: top center;
+        background-size: cover;
+
+        height: 400px;
+    }
+    .qualidade-unica {
+        background-color: var(--lgray);
+
+        overflow-x: hidden;
+
+        max-width: 1600px;
+        margin: auto;
+
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            white-space: nowrap;
+
+            text-align: center;
+            
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 30pt;
+        }
+        li::after {
+            content: ' ❂';
+            margin-inline: 20px;
+        }
+        li:last-child::after{
+            content: '';
+            margin-inline: 0;
+        }
+    }
 }
 
 section {
     margin: auto;
     max-width: 1600px;
+
+    margin-block: 50px;
 
     h1, #subtitulo-section {
         width: 1200px;
