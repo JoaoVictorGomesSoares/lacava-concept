@@ -53,7 +53,7 @@
         justify-content: space-between;
         align-items: center;
 
-        animation: scroll 20s linear infinite;
+        animation: scroll 40s linear infinite;
 
         min-width: 100%;
 
@@ -175,12 +175,14 @@ picture {
 
     #fundo-secundario {
         background-image: url("../assets/images/picture/foto-capaN2.png");
-        background-position: top center;
+        background-position: center -150px;
         background-size: cover;
 
         height: 400px;
     }
     .qualidade-unica {
+        text-transform: uppercase;
+        
         background-color: var(--lgray);
 
         overflow-x: hidden;
@@ -293,6 +295,112 @@ section {
             }
         }
     }
+    #mais-vendidos {
+        position: relative;
+
+        width: max-content;
+
+        padding-inline: 10px;
+    }
+    #mais-vendidos:after {
+        content: '';
+        
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+
+        width: 100%;
+        height: 2px;
+
+        background-color: var(--black);
+
+        box-shadow: 0px 5px 5px var(--sombra);
+    }
+    
+    #lista-video {
+        display: flex;
+        justify-content: space-between;
+
+        max-width: 1200px;
+        margin: auto;
+
+        margin-top: 50px;
+
+        video, .sombra {
+            width: 250px;
+            height: 445px;
+
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        video {
+            background-color: var(--regular);
+        }
+        .sombra {
+            position: absolute;
+
+            transform: translateY(-100.5%);
+
+            background-image: linear-gradient(to bottom, #00000044, #00000022, #00000044);             
+            transition: .3s;
+        }
+        .sombra:hover {
+            opacity: 0;
+        }
+        #descriçao-produto {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            margin-inline: 20px;
+
+            position: absolute;
+
+            transform: translateY(-120%);
+
+            img {
+                background-color: var(--white);
+
+                border-radius: 10px;
+            }
+            p {
+                user-select: none;
+
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 12pt;
+                color: var(--white);
+            }
+        }
+        #adicionar-carrinho {
+            position: absolute;
+            transform: translateY(-10%);
+
+            width: 250px;
+
+            cursor: pointer;
+
+            height: 45px;
+
+            padding-block: 10px;
+
+            background-color: var(--regular);
+
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            p {
+                user-select: none;
+
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 12pt;
+                color: var(--white);
+
+                text-align: center;
+            }
+        }
+    }
 }
 
 .cinco-produtos {
@@ -306,45 +414,12 @@ section {
     li:hover {
         cursor: pointer;
     }
-    
-    .foto-produto {
-        width: 200px;
-        height: 200px;
-        
-        background-size: cover;
-        background-position: center center;
 
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-
-        transition: .5s;
-    }
-    .foto-produto:hover {
-        cursor: pointer;
-
-        background-color: var(--dimwhite);
-    }
     p {
         font-family: "Poppins", sans-serif;
-        font-weight: 400;
         font-style: normal;
 
         text-align: center;
-    }
-    .nome, .valor {
-        font-size: 15pt;
-        letter-spacing: 2px;
-    }
-    .nome {
-        font-weight: bold;
-        color: var(--black);
-    }
-    .valor {
-        color: var(--preço);
-    }
-    .parcelas,.estoque {
-        color: var(--dchumbo);
-        font-style: italic;
     }
 
     #produto1 {
@@ -377,4 +452,38 @@ section {
     #produto5:hover {
         background-image: url("../assets/images/picture/modelo-oculos5.png");
     }
+}
+
+.foto-produto {
+    width: 200px;
+    height: 200px;
+    
+    background-size: cover;
+    background-position: center center;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    transition: .5s;
+}
+.foto-produto:hover {
+    cursor: pointer;
+
+    background-color: var(--dimwhite);
+}
+
+.nome, .valor {
+    font-size: 15pt;
+    letter-spacing: 2px;
+}
+.nome {
+    font-weight: bold;
+    color: var(--black);
+}
+.valor {
+    color: var(--preço);
+}
+.parcelas,.estoque {
+    color: var(--dchumbo);
+    font-style: italic;
 }
