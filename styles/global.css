@@ -163,7 +163,7 @@ picture {
         background-position: center center;
         background-size: cover;
 
-        height: 750px;
+        height: 650px;
         
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
@@ -461,11 +461,11 @@ section {
     background-size: cover;
     background-position: center center;
 
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
 
     transition: .5s;
 }
+
 .foto-produto:hover {
     cursor: pointer;
 
