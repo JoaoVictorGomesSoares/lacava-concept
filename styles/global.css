@@ -325,6 +325,18 @@ section {
         margin: auto;
 
         margin-top: 50px;
+        
+        p {
+            user-select: none;
+
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 12pt;
+            color: var(--white);
+
+            text-align: center;
+        }
 
         video, .sombra {
             width: 250px;
@@ -339,9 +351,10 @@ section {
         .sombra {
             position: absolute;
 
-            transform: translateY(-100.5%);
+            transform: translateY(-100.9%);
 
-            background-image: linear-gradient(to bottom, #00000044, #00000022, #00000044);             
+            background-image: linear-gradient(to bottom, #00000044, #00000022, #00000044);  
+
             transition: .3s;
         }
         .sombra:hover {
@@ -362,15 +375,6 @@ section {
 
                 border-radius: 10px;
             }
-            p {
-                user-select: none;
-
-                font-family: "Poppins", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                font-size: 12pt;
-                color: var(--white);
-            }
         }
         #adicionar-carrinho {
             position: absolute;
@@ -388,16 +392,15 @@ section {
 
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
+        }
+        #adicionar-carrinho:hover {
+            background-color: var(--white);
+            border: 1px black solid;
+
+            transition: .5s;
+
             p {
-                user-select: none;
-
-                font-family: "Poppins", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                font-size: 12pt;
-                color: var(--white);
-
-                text-align: center;
+                color: var(--black);
             }
         }
     }
