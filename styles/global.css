@@ -199,7 +199,7 @@ picture {
         display: flex;
         justify-content: space-between;
 
-        li {
+        span {
             white-space: nowrap;
 
             text-align: center;
@@ -209,11 +209,11 @@ picture {
             font-style: normal;
             font-size: 30pt;
         }
-        li::after {
+        span::after {
             content: ' ❂';
             margin-inline: 20px;
         }
-        li:last-child::after{
+        span:last-child::after{
             content: '';
             margin-inline: 0;
         }
@@ -343,16 +343,13 @@ section {
         justify-content: space-between;
 
         max-width: 1200px;
-        p {
-            user-select: none;
 
+        p {
             font-family: "Poppins", sans-serif;
             font-weight: 400;
             font-style: normal;
             font-size: 12pt;
             color: var(--white);
-
-            text-align: center;
         }
 
         video, .sombra {
@@ -364,13 +361,14 @@ section {
         }
         video {
             background-color: var(--regular);
+
+            color: var(--white);
         }
         .sombra {
             position: absolute;
-
             top: 0;
 
-            background-image: linear-gradient(to bottom, #00000044, #00000022, #00000044);  
+            background-color: #00000044;  
 
             transition: .3s;
         }
@@ -380,8 +378,8 @@ section {
         #descriçao-produto {
             display: flex;
             align-items: center;
-            gap: 35px;
-            margin-inline: 20px;
+            gap: 10px;
+            margin-inline: 10px;
 
             position: absolute;
 
@@ -394,32 +392,35 @@ section {
             }
         }
         #adicionar-carrinho {
-
             position: absolute;
-            transform: translateY(-10%);
+            bottom: -46px;
 
-            width: 250px;
-
-            cursor: pointer;
-
-            height: 45px;
-
-            padding-block: 10px;
+            display: block;
 
             background-color: var(--regular);
 
+            color: var(--white);
+
+            width: 250px;
+            height: 50px;
+
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
+            border: 1px var(--regular) solid;
+
+            font-size: 12pt;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
         #adicionar-carrinho:hover {
             background-color: var(--white);
-            border: 1px black solid;
 
             transition: .5s;
 
-            p {
-                color: var(--black);
-            }
+            color: var(--black);
+
+            cursor: pointer;
         }
     }
 }
