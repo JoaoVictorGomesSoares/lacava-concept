@@ -12,7 +12,7 @@
     <div class="letreiro">
         <ul>
             <li>
-                <span class="info1">Envio Expresso de Cabo Frio</span>
+                <span class="info1">Envio Direto de Cabo Frio</span>
                 <span class="bolinha">•</span>
             </li>
             <li>
@@ -24,7 +24,7 @@
                 <span class="bolinha">•</span>
             </li>
             <li>
-                <span class="info1">Envio Expresso de Cabo Frio</span>
+                <span class="info1">Envio Direto de Cabo Frio</span>
                 <span class="bolinha">•</span>
             </li>
             <li>
@@ -39,7 +39,7 @@
 
         <ul aria-hidden="true">
             <li>
-                <span class="info1">Envio Expresso de Cabo Frio</span>
+                <span class="info1">Envio Direto de Cabo Frio</span>
                 <span class="bolinha">•</span>
             </li>
             <li>
@@ -51,7 +51,7 @@
                 <span class="bolinha">•</span>
             </li>
             <li>
-                <span class="info1">Envio Expresso de Cabo Frio</span>
+                <span class="info1">Envio Direto de Cabo Frio</span>
                 <span class="bolinha">•</span>
             </li>
             <li>
@@ -95,61 +95,63 @@
     </picture>
 
     <section>
-        <h1>Liquidação de Verão</h1>
-        <div id="subtitulo-section">
-            <p>Nas compras acima de R$9.999,99 concorra a 1 Brinde</p>
-            <a href="#">
-                <p>Ver Mais</p>
-                <div>></div>
-            </a>
-        </div>
-        <ul class="cinco-produtos">
-            <li>
-                <a href="#">
-                    <div id="produto1" class="foto-produto"></div>
-                    <p class="nome">Óculos #001</p>
-                    <p class="valor">R$999.99</p>
-                    <p class="parcelas">3x de 333,33 sem juros</p>
-                    <p class="estoque">9 cores disponiveis</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div id="produto2" class="foto-produto"></div>
-                    <p class="nome">Óculos #002</p>
-                    <p class="valor">R$999.99</p>
-                    <p class="parcelas">3x de 333,33 sem juros</p>
-                    <p class="estoque">9 cores disponiveis</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div id="produto3" class="foto-produto"></div>
-                    <p class="nome">Óculos #003</p>
-                    <p class="valor">R$999.99</p>
-                    <p class="parcelas">3x de 333,33 sem juros</p>
-                    <p class="estoque">9 cores disponiveis</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div id="produto4" class="foto-produto"></div>
-                    <p class="nome">Óculos #004</p>
-                    <p class="valor">R$999.99</p>
-                    <p class="parcelas">3x de 333,33 sem juros</p>
-                    <p class="estoque">9 cores disponiveis</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div id="produto5" class="foto-produto"></div>
-                    <p class="nome">Óculos #005</p>
-                    <p class="valor">R$999.99</p>
-                    <p class="parcelas">3x de 333,33 sem juros</p>
-                    <p class="estoque">9 cores disponiveis</p>
-                </a>
-            </li>
-        </ul>
+        <table>
+            <caption>
+                <h1>Liquidação de Verão</h1>
+                <div id="subtitulo-section">
+                    <p>Nas compras acima de R$9.999,99 concorra a 1 Brinde</p>
+                    <a href="#">
+                        <p>Ver Mais</p>
+                        <input type="button" id="button" value=">"></input>
+                    </a>
+                </div>
+            </caption>
+
+            <tbody>
+                <tr>
+                    <td class="produto">
+                        <a href="#">
+                            <div class="imagem-produto" id="imagem-produto-1">
+                            </div>
+                            <p class="nome">Óculos LACAVA #001</p>
+                            <p class="valor">R$9.999,99</p>
+                        </a>
+                    </td>
+                    <td class="produto">
+                        <a href="#">
+                            <div class="imagem-produto" id="imagem-produto-2">
+                            </div>
+                            <p class="nome">Óculos LACAVA #002</p>
+                            <p class="valor">R$9.999,99</p>
+                        </a>
+                    </td>
+                    <td class="produto">
+                        <a href="#">
+                            <div class="imagem-produto" id="imagem-produto-3">
+                            </div>
+                            <p class="nome">Óculos LACAVA #003</p>
+                            <p class="valor">R$9.999,99</p>
+                        </a>
+                    </td>
+                    <td class="produto">
+                        <a href="#">
+                            <div class="imagem-produto" id="imagem-produto-4">
+                            </div>
+                            <p class="nome">Óculos LACAVA #004</p>
+                            <p class="valor">R$9.999,99</p>
+                        </a>
+                    </td>
+                    <td class="produto">
+                        <a href="#">
+                            <div class="imagem-produto" id="imagem-produto-5">
+                            </div>
+                            <p class="nome">Óculos LACAVA #005</p>
+                            <p class="valor">R$9.999,99</p>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <picture>
@@ -169,182 +171,101 @@
     </picture>
 
     <section>
-        <h1 class="h1-da-section">Mais Vendidos</h1>
-        <div id="catalogo">
-            <ul class="cinco-produtos">
-                <li>
-                    <a href="#"> <!-- Apontamento pro Link do produto -->
-                        <div id="produto1" class="foto-produto"></div> <!-- Foto no CSS -->
-                        <p class="nome">Óculos #001</p> <!-- Nome -->
-                        <p class="valor">R$999.99</p> <!-- valor -->
-                        <p class="parcelas">3x de 333,33 sem juros</p> <!-- Parcelas -->
-                        <p class="estoque">9 cores disponiveis</p> <!-- Cores disponiveis -->
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div id="produto2" class="foto-produto"></div>
-                        <p class="nome">Óculos #002</p>
-                        <p class="valor">R$999.99</p>
-                        <p class="parcelas">3x de 333,33 sem juros</p>
-                        <p class="estoque">9 cores disponiveis</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div id="produto3" class="foto-produto"></div>
-                        <p class="nome">Óculos #003</p>
-                        <p class="valor">R$999.99</p>
-                        <p class="parcelas">3x de 333,33 sem juros</p>
-                        <p class="estoque">9 cores disponiveis</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div id="produto4" class="foto-produto"></div>
-                        <p class="nome">Óculos #004</p>
-                        <p class="valor">R$999.99</p>
-                        <p class="parcelas">3x de 333,33 sem juros</p>
-                        <p class="estoque">9 cores disponiveis</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div id="produto5" class="foto-produto"></div>
-                        <p class="nome">Óculos #005</p>
-                        <p class="valor">R$999.99</p>
-                        <p class="parcelas">3x de 333,33 sem juros</p>
-                        <p class="estoque">9 cores disponiveis</p>
-                    </a>
-                </li>
-            </ul>
-            <ul class="cinco-produtos">
-                <li>
-                    <a href="#"> <!-- Apontamento pro Link do produto -->
-                        <div id="produto1" class="foto-produto"></div> <!-- Foto no CSS -->
-                        <p class="nome">Óculos #001</p> <!-- Nome -->
-                        <p class="valor">R$999.99</p> <!-- valor -->
-                        <p class="parcelas">3x de 333,33 sem juros</p> <!-- Parcelas -->
-                        <p class="estoque">9 cores disponiveis</p> <!-- Cores disponiveis -->
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div id="produto2" class="foto-produto"></div>
-                        <p class="nome">Óculos #002</p>
-                        <p class="valor">R$999.99</p>
-                        <p class="parcelas">3x de 333,33 sem juros</p>
-                        <p class="estoque">9 cores disponiveis</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div id="produto3" class="foto-produto"></div>
-                        <p class="nome">Óculos #003</p>
-                        <p class="valor">R$999.99</p>
-                        <p class="parcelas">3x de 333,33 sem juros</p>
-                        <p class="estoque">9 cores disponiveis</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div id="produto4" class="foto-produto"></div>
-                        <p class="nome">Óculos #004</p>
-                        <p class="valor">R$999.99</p>
-                        <p class="parcelas">3x de 333,33 sem juros</p>
-                        <p class="estoque">9 cores disponiveis</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div id="produto5" class="foto-produto"></div>
-                        <p class="nome">Óculos #005</p>
-                        <p class="valor">R$999.99</p>
-                        <p class="parcelas">3x de 333,33 sem juros</p>
-                        <p class="estoque">9 cores disponiveis</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <h1 class="h1-da-section">Mídias</h1>
-        <ul id="lista-video">
+        <ul id="lista-botoes-catalogos">
             <li>
-                <a href="#">
-                    <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
-                        seu navegador não suporta video
-                    </video>
-                    <div class="sombra"></div>
-                    <div id="descriçao-produto">
-                        <img src="../assets/images/picture/imagem_oculos1.png" width="50px" alt="imagem do produto do video">
-                        <div>
-                            <p class="nome">Óculos #001</p>
-                            <p class="valor">R$999.99</p>
-                        </div>
-                    </div>
-                </a>
-                <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
+                <a href="catalogos/novos.html" target="frame"><input id="botao-catalogo" type="button" value="Novos"></a>
             </li>
             <li>
-                <a href="#">
-                    <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
-                        seu navegador não suporta video
-                    </video>
-                    <div class="sombra"></div>
-                    <div id="descriçao-produto">
-                        <img src="../assets/images/picture/imagem_oculos2.png" width="50px" alt="imagem do produto do video">
-                        <div>
-                            <p class="nome">Óculos #002</p>
-                            <p class="valor">R$999.99</p>
-                        </div>
-                    </div>
-                </a>
-                <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
+                <a href="catalogos/coleçao-nova.html" target="frame"><input id="botao-catalogo" type="button" value="Coleção Nova"></a>
             </li>
             <li>
-                <a href="#">
-                    <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
-                        seu navegador não suporta video
-                    </video>
-                    <div class="sombra"></div>
-                    <div id="descriçao-produto">
-                        <img src="../assets/images/picture/imagem_oculos3.png" width="50px" alt="imagem do produto do video">
-                        <div>
-                            <p class="nome">Óculos #003</p>
-                            <p class="valor">R$999.99</p>
-                        </div>
-                    </div>
-                </a>
-                <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
-            </li>
-            <li>
-                <a href="#">
-                    <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
-                        seu navegador não suporta video
-                    </video>
-                    <div class="sombra"></div>
-                    <div id="descriçao-produto">
-                        <img src="../assets/images/picture/imagem_oculos4.png" width="50px" alt="imagem do produto do video">
-                        <div>
-                            <p class="nome">Óculos #004</p>
-                            <p class="valor">R$999.99</p>
-                        </div>
-                    </div>
-                </a>
-                <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
+                <a href="catalogos/melhores.html" target="frame"><input id="botao-catalogo" type="button" value="Melhores"></a>
             </li>
         </ul>
-    </section>
 
-    <section id="cem-mil">
-        <h1 id="numero">+100.000</h1>
-        <h1 id="texto">produtos vendidos para todo Brasil</h1>
+        <iframe id="tabela-catalogo" name="frame">
+
+        </iframe>
+
+        <a href="#"><input type="button" value="ver todos os produtos" id="ver-produtos"></a>
+
+        <h1 class="h1-section">Mídias</h1>
+
+        <table id="tabela-midias">
+            <tbody>
+                <tr id="linha-video">
+                    <td>
+                        <a href="#">
+                            <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
+                                seu navegador não suporta video
+                            </video>
+                            <div class="sombra"></div>
+                            <div id="descriçao-produto">
+                                <img src="../assets/images/section/imagem_oculos1.png" width="50px" alt="imagem do produto do video">
+                                <div>
+                                    <p class="nome">Óculos #001</p>
+                                    <p class="valor">R$999.99</p>
+                                </div>
+                            </div>
+                        </a>
+                        <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
+                    </td>
+                    <td>
+                        <a href="#">
+                            <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
+                                seu navegador não suporta video
+                            </video>
+                            <div class="sombra"></div>
+                            <div id="descriçao-produto">
+                                <img src="../assets/images/section/imagem_oculos1.png" width="50px" alt="imagem do produto do video">
+                                <div>
+                                    <p class="nome">Óculos #001</p>
+                                    <p class="valor">R$999.99</p>
+                                </div>
+                            </div>
+                        </a>
+                        <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
+                    </td>
+                    <td>
+                        <a href="#">
+                            <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
+                                seu navegador não suporta video
+                            </video>
+                            <div class="sombra"></div>
+                            <div id="descriçao-produto">
+                                <img src="../assets/images/section/imagem_oculos1.png" width="50px" alt="imagem do produto do video">
+                                <div>
+                                    <p class="nome">Óculos #001</p>
+                                    <p class="valor">R$999.99</p>
+                                </div>
+                            </div>
+                        </a>
+                        <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
+                    </td>
+                    <td>
+                        <a href="#">
+                            <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
+                                seu navegador não suporta video
+                            </video>
+                            <div class="sombra"></div>
+                            <div id="descriçao-produto">
+                                <img src="../assets/images/section/imagem_oculos1.png" width="50px" alt="imagem do produto do video">
+                                <div>
+                                    <p class="nome">Óculos #001</p>
+                                    <p class="valor">R$999.99</p>
+                                </div>
+                            </div>
+                        </a>
+                        <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <section>
-        <a href="#"><input type="button" value="ver todos os produtos" id="ver-produtos"></a>
-
         <h1 id="news-letter">Nossa Caixa De Entrada</h1>
-        <p id="paragrafo-news-letter">Seja o primeiro(a) a receber as novidades e <br> promoções da LACAVA em primeiríssima mão!!! <br> Não fique fora dessa.</p>
+        <p id="paragrafo-news-letter">Seja o primeiro(a) a receber as novidades e promoções da LACAVA em primeiríssima mão!!! <br> Não fique fora dessa.</p>
 
         <form>
             <input type="text" placeholder="Nome" id="input-nome">
@@ -353,8 +274,37 @@
         </form>
 
         <h1 id="redes-sociais">Redes Sociais</h1>
-        <p id="paragrafo-redes-sociais">siga-nos em nossas redes sociais para concorrer a descontos <br> e ficar por dentro de todas as novidades!</p>
-        <ul id="lista-redes-sociais">
+        <p id="paragrafo-redes-sociais">Siga-nos em nossas redes sociais para concorrer a descontos e ficar por dentro de todas as novidades!</p>
+
+        <table>
+            <tbody id="tabela-redes-sociais">
+                <tr id="linha-redes-sociais">
+                    <td>
+                        <a href="https://www.instagram.com/lacavaconcept._/" target="_blank">
+                            <img src="../assets/icones/icone-instagram.png" alt="Link pro Instagram">
+                            <p>Nosso Instagram</p>
+                            <input type="button" value="ver perfil">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="" target="_blank">
+                            <img src="../assets/icones/icone-tiktok.png" alt="Link pro Tiktok">
+                            <p>Nosso Tiktok</p>
+                            <input type="button" value="ver perfil">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="" target="_blank">
+                            <img src="../assets/icones/icone-whatsapp.png" alt="Link pro WhatsApp">
+                            <p>Nosso WhatsApp</p>
+                            <input type="button" value="ver perfil">
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <ul id="lista-redes-sociais">
             <li>
                 <a href="https://www.instagram.com/lacavaconcept._/" target="_blank">
                     <img src="../assets/icones/icone-instagram.png" alt="Link pro Instagram">
@@ -376,38 +326,74 @@
                     <input type="button" value="ver perfil">
                 </a>
             </li>
-        </ul>
+        </ul> -->
 
         <h1 id="relatos-clientes">Relatos dos Clientes</h1>
-        <p id="paragrafos-relatos-clientes">Histórias reais de pessoas que tiveram experiências incríveis com a nossa loja. <br> Sinta-se à vontade para compartilhar a sua também e fazer parte dessa jornada. <br> Sua opinião é muito importante para nós!</p>
-        <ul id="lista-avaliaçoes">
-            <li>
-                <div id="avaliaçao"></div>
-            </li>
-            <li>
-                <div id="avaliaçao"></div>
-            </li>
-            <li>
-                <div id="avaliaçao"></div>
-            </li>
-            <li>
-                <div id="avaliaçao"></div>
-            </li>
-        </ul>
-        <ul id="lista-avaliaçoes">
-            <li>
-                <div id="avaliaçao"></div>
-            </li>
-            <li>
-                <div id="avaliaçao"></div>
-            </li>
-            <li>
-                <div id="avaliaçao"></div>
-            </li>
-            <li>
-                <div id="avaliaçao"></div>
-            </li>
-        </ul>
+        <p id="paragrafos-relatos-clientes">Histórias reais de pessoas que tiveram experiências incríveis com a nossa loja. Sinta-se à vontade para compartilhar a sua também e fazer parte dessa jornada. Sua opinião é muito importante para nós!</p>
+
+        <table>
+            <caption>Avaliações dos Clientes:</caption>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                    <td>
+                        <div class="container-avaliaçao"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+    
+    <section id="cem-mil">
+        <h1 id="numero">+100.000</h1>
+        <h1 id="texto">produtos vendidos para todo Brasil</h1>
     </section>
 
     <div class="letreiro" id="clientes">

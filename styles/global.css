@@ -145,7 +145,7 @@ header {
             transform: .3s;
         }
         a:hover {
-            opacity: .6;
+            opacity: .8;
         }
         a:hover::after {
             transform: scaleX(1);
@@ -226,243 +226,220 @@ picture {
     }
 }
 
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25pt;
+    padding-block: 10px;
+}
+
 section {
-    margin: auto;
-    max-width: 1600px;
-
-    margin-block: 50px;
-
-    h1, #subtitulo-section {
-        width: 1200px;
-        margin: auto;
-    }
-    h1 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 30pt;
-
-        margin-bottom: 30px;
-    }
-    #subtitulo-section {
-        margin-bottom: 50px;
-
-        display: flex;
-        justify-content: space-between;
-
-        p, a, div {                
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 15pt;
-            color: var(--black);
-        }
-        a {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-
-            p {
-                letter-spacing: 1px;
-
-                position: relative;
-            }
-            p:after {
-                content: '';
-
-                position: absolute;
-
-                width: 100%;
-                height: 1px;
-
-                background-color: var(--black);
-
-                left: 0;
-                bottom: 0;
-
-                transform: scaleX(0);
-                transform-origin: right;
-                transition: transform .3s;
-            }
-            p:hover:after {
-                transform-origin: left;
-                transform: scaleX(1);
-            }
-
-            div {
-                background-color: var(--silver);
-                width: 35px;
-                height: 35px;
-
-                border-radius: 50%;
-
-                padding: 3px 13px;
-
-                transition: .3s;
-            }
-            div:hover {
-                background-color: var(--regular);
-                color: var(--white);
-            }
-        }
-    }
-    .h1-da-section {
-        margin-bottom: 0;
-
-        position: relative;
-
-        width: max-content;
-
-        padding-inline: 10px;
-    }
-    .h1-da-section:after {
-        content: '';
+    table {
+        max-width: 1400px;
         
-        position: absolute;
-        left: 0;
-        bottom: -2px;
+        margin: auto;
+        
+        border-collapse: separate;
 
-        width: 100%;
-        height: 2px;
+        border-spacing: 50px;
 
-        background-color: var(--black);
+        h1, #subtitulo-section {
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            padding-bottom: 10px;
 
-        box-shadow: 0px 5px 5px var(--sombra);
+            font-size: 30pt;
+        
+            text-align: left;
+        }
+        #subtitulo-section {
+            margin-bottom: 20px;
+
+            display: flex;
+            justify-content: space-between;
+
+            p, a, #button {                
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 15pt;
+                color: var(--black);
+            }
+            a {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin-top: 1px;
+
+                p {
+                    letter-spacing: 1px;
+
+                    position: relative;
+                }
+                p:after {
+                    content: '';
+
+                    position: absolute;
+
+                    width: 100%;
+                    height: 1px;
+
+                    background-color: var(--black);
+
+                    left: 0;
+                    bottom: 0;
+
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform .3s;
+                }
+                p:hover:after {
+                    transform-origin: left;
+                    transform: scaleX(1);
+                }
+
+                #button {
+                    border: none;
+
+                    background-color: var(--dimwhite);
+                    width: 35px;
+                    height: 35px;
+
+                    border-radius: 50%;
+
+                    transition: .3s;
+                }
+                #button:hover {
+                    background-color: var(--regular);
+                    color: var(--white);
+
+                    cursor: pointer;
+                }
+            }
+        }
+        .produto {
+            .imagem-produto {
+                margin: auto;
+                width: 200px;
+                height: 200px;
+
+                border-radius: 10px;
+
+                background-size: cover;
+
+                transition: .5s;
+            }
+            .imagem-produto:hover {
+                background-color: var(--dimwhite);
+            }
+            #imagem-produto-1 {
+                background-image: url("../assets/images/section/imagem_oculos1.png");
+            }
+            #imagem-produto-1:hover {
+                background-image: url("../assets/images/section/modelo-oculos1.png");
+            }
+            #imagem-produto-2 {
+                background-image: url("../assets/images/section/imagem_oculos2.png");
+            }
+            #imagem-produto-2:hover {
+                background-image: url("../assets/images/section/modelo-oculos2.png");
+            }
+            #imagem-produto-3 {
+                background-image: url("../assets/images/section/imagem_oculos3.png");
+            }
+            #imagem-produto-3:hover {
+                background-image: url("../assets/images/section/modelo-oculos3.png");
+            }
+            #imagem-produto-4 {
+                background-image: url("../assets/images/section/imagem_oculos4.png");
+            }
+            #imagem-produto-4:hover {
+                background-image: url("../assets/images/section/modelo-oculos4.png");
+            }
+            #imagem-produto-5 {
+                background-image: url("../assets/images/section/imagem_oculos5.png");
+            }
+            #imagem-produto-5:hover {
+                background-image: url("../assets/images/section/modelo-oculos5.png");
+            }
+
+        }
     }
-    #catalogo li {
-        margin-block: 50px;
-    }
-    #lista-video {
-        position: relative;
-
-        margin-inline: auto;
-
-        margin-block: 50px;
-
+    #lista-botoes-catalogos {
         display: flex;
         justify-content: space-between;
 
-        max-width: 1200px;
+        width: 600px;
+        margin: auto;
 
-        p {
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 12pt;
-            color: var(--white);
-        }
-
-        video, .sombra {
-            width: 250px;
-            height: 445px;
-
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-        video {
+        #botao-catalogo {
             background-color: var(--regular);
 
+            border: 1px var(--regular) solid;
+            border-radius: 2px;
+            
             color: var(--white);
-        }
-        .sombra {
-            position: absolute;
-            top: 0;
 
-            background-color: #00000044;  
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            letter-spacing: 2px;
+            
+            text-transform: uppercase;
+
+            padding: 5px 30px;
 
             transition: .3s;
         }
-        .sombra:hover {
-            opacity: 0;
-        }
-        #descriçao-produto {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-inline: 10px;
-
-            position: absolute;
-
-            bottom: 15px;
-
-            img {
-                background-color: var(--white);
-
-                border-radius: 10px;
-            }
-        }
-        #adicionar-carrinho {
-            position: absolute;
-            bottom: -46px;
-
-            display: block;
-
-            background-color: var(--regular);
-
-            color: var(--white);
-
-            width: 250px;
-            height: 50px;
-
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            border: 1px var(--regular) solid;
-
-            font-size: 12pt;
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-        #adicionar-carrinho:hover {
+        #botao-catalogo:hover {
             background-color: var(--white);
-
-            transition: .5s;
 
             color: var(--black);
 
             cursor: pointer;
         }
     }
-}
+    #tabela-catalogo {
+        display: block;
+        margin: auto;
 
-section#cem-mil {
-    position: relative;
+        margin-block: 20px;
 
-    text-align: center;
+        width: 1200px;
+        height: 700px;
 
-    margin-block: 0px;
-
-    #numero {
-        font-size: 150pt;
-        font-weight: 500;
-
-        background-image: linear-gradient(to bottom, var(--dimwhite), var(--silver));
-
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        display: inline-block;
+        border: none;
     }
-    #texto {
+
+    .h1-section {
+        position: relative;
+
+        width: max-content;
+
+        margin: auto;
+    }
+    .h1-section::after {
         position: absolute;
 
-        top: 250px;
-        left: 50%;
+        content: "";
 
-        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+
+        background-color: var(--regular);
+
+        left: 0;
+        bottom: 13px;
     }
-}
-
-section {
-    margin: auto;
-
-    position: relative;
-    width: 100%;
-
     #ver-produtos {
-        position: absolute;
+        display: block;
+        margin: auto;
 
-        left: 50%;
-        transform: translateX(-50%);
+        margin-block: 50px;
 
         background-color: var(--regular);
         border: 1px var(--regular) solid;
@@ -487,18 +464,126 @@ section {
 
         cursor: pointer;
     }
+        
+    #tabela-midias {
+        max-width: 1400px;
+        margin: auto;
+
+        margin-bottom: 100px;
+
+        #linha-video {
+            position: relative;
+
+            video, .sombra {
+                width: 250px;
+                height: 445px;
+
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            video {
+                background-color: var(--regular);
+
+                color: var(--white);
+            }
+            .sombra {
+                position: absolute;
+                top: 0;
+
+                background-color: #00000044;  
+
+                transition: .3s;
+            }
+            .sombra:hover {
+                opacity: 0;
+            }
+            #descriçao-produto {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                
+                margin-left: 20px;
+
+                position: absolute;
+
+                bottom: 15px;
+
+                p {
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 12pt;
+
+                    color: var(--white);
+                    text-align: left;
+
+                    line-height: 15px;
+                }
+
+                img {
+                    margin-top: 20px;
+
+                    background-color: var(--white);
+
+                    border-radius: 10px;
+                }
+            }
+            #adicionar-carrinho {
+                position: absolute;
+                bottom: -46px;
+
+                display: block;
+
+                background-color: var(--regular);
+
+                color: var(--white);
+
+                width: 250px;
+                height: 50px;
+
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border: 1px var(--regular) solid;
+
+                font-size: 12pt;
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            #adicionar-carrinho:hover {
+                background-color: var(--white);
+
+                transition: .5s;
+
+                color: var(--black);
+
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+section {
+    margin: auto;
+    width: 100%;
+
+    position: relative;
+    max-width: 1600px;
 
     #news-letter, #redes-sociais, #relatos-clientes {
         position: relative;
 
-        padding-top: 100px;
+        padding-block: 20px;
 
         text-align: center;
 
         z-index: -1;
+
+        width: 1050px;
+        margin: auto;
     }
-    #redes-sociais, #relatos-clientes {
-        padding-top: 0;
+    #news-letter {
+        padding-top: 50px;
     }
     #news-letter::after , #news-letter::before,
     #redes-sociais::after , #redes-sociais::before,
@@ -507,20 +592,24 @@ section {
 
         position: absolute;
 
-        width: 350px;
         height: 2px;
 
         background-color: var(--regular);
 
-        bottom: 28px;
-
         color: var(--dchumbo);
+
+        bottom: 50%;
+    }
+    #news-letter::after , #news-letter::before {
+        bottom: 35%;
+
+        width: 300px;
     }
     #redes-sociais::after , #redes-sociais::before {
-        width: 450px;
+        width: 380px;
     }
     #relatos-clientes::after , #relatos-clientes::before {
-        width: 385px;
+        width: 330px;
     }
     #news-letter::after, #redes-sociais::after, #relatos-clientes::after {
         right: 0;
@@ -528,9 +617,14 @@ section {
     #news-letter::before, #redes-sociais::before, #relatos-clientes::before {
         left: 0;
     }
+
     #paragrafo-news-letter, #paragrafo-redes-sociais, #paragrafos-relatos-clientes{
         font-size: 15pt;
         text-align: center;
+
+        max-width: 600px;
+
+        margin: auto;
     }
 
     #input-nome, #input-email, #input-enviar {
@@ -569,16 +663,13 @@ section {
         cursor: pointer;
     }
 
-    #lista-redes-sociais {
-        display: flex;
-        justify-content: space-between;
-
+    #linha-redes-sociais {
         max-width: 500px;
 
         margin: auto;
         margin-block: 50px;
 
-        li {
+        td {
             text-align: center;
 
             border: 1px var(--black) solid;
@@ -588,6 +679,7 @@ section {
 
             img {
                 width: 50px;
+                height: auto;
             }
             p {
                 padding-block: 10px;
@@ -615,22 +707,53 @@ section {
             }
         }
     }
-    #lista-avaliaçoes {
-        display: flex;
-        justify-content: space-around;
+    table {
+        border-collapse: separate;
+        border-spacing: 20px;
 
-        margin: auto;
+        caption {
+            margin-top: 50px;
 
-        max-width: 1200px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20pt;
 
-        margin-block: 50px;
-
-        #avaliaçao {
+            letter-spacing: 2px;
+        }
+        .container-avaliaçao {
             width: 250px;
-            height: 200px;
+            height: 150px;
 
             border: 1px var(--black) solid;
         }
+    }
+}
+
+#cem-mil {
+    position: relative;
+
+    text-align: center;
+
+    margin-block: 0px;
+
+    #numero {
+        font-size: 150pt;
+        font-weight: 500;
+
+        background-image: linear-gradient(to bottom, var(--dimwhite), var(--silver));
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
+    #texto {
+        position: absolute;
+
+        top: 250px;
+        left: 50%;
+
+        transform: translateX(-50%);
     }
 }
 
@@ -833,80 +956,22 @@ footer {
     }
 }
 
-.cinco-produtos {
-    max-width: 1300px;
-    margin: auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    li:hover {
-        cursor: pointer;
-    }
-
-    p {
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
-
-        text-align: center;
-    }
-
-    #produto1 {
-        background-image: url("../assets/images/picture/imagem_oculos1.png");
-    }
-    #produto1:hover {
-        background-image: url("../assets/images/picture/modelo-oculos1.png");
-    }
-    #produto2 {
-        background-image: url("../assets/images/picture/imagem_oculos2.png");
-    }
-    #produto2:hover {
-        background-image: url("../assets/images/picture/modelo-oculos2.png");
-    }
-    #produto3 {
-        background-image: url("../assets/images/picture/imagem_oculos3.png");
-    }
-    #produto3:hover {
-        background-image: url("../assets/images/picture/modelo-oculos3.png");
-    }
-    #produto4 {
-        background-image: url("../assets/images/picture/imagem_oculos4.png");
-    }
-    #produto4:hover {
-        background-image: url("../assets/images/picture/modelo-oculos4.png");
-    }
-    #produto5 {
-        background-image: url("../assets/images/picture/imagem_oculos5.png");
-    }
-    #produto5:hover {
-        background-image: url("../assets/images/picture/modelo-oculos5.png");
-    }
-}
-
-.foto-produto {
-    width: 200px;
-    height: 200px;
-    
-    background-size: cover;
-    background-position: center center;
-
-    border-radius: 10px;
-
-    transition: .5s;
-}
-
-.foto-produto:hover {
-    cursor: pointer;
-
-    background-color: var(--dimwhite);
-}
-
 .nome, .valor {
-    font-size: 15pt;
-    letter-spacing: 2px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;
+
+    letter-spacing: 1px;
+    padding-block: 5px;
+
+    text-align: center;
 }
 .nome {
+    margin-top: 20px;
+    bottom: -30px;
+
     font-weight: bold;
     color: var(--black);
 }
