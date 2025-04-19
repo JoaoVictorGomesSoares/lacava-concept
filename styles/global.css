@@ -415,14 +415,18 @@ section {
         border: none;
     }
 
-    .h1-section {
+    #h1-midias {
         position: relative;
 
         width: max-content;
 
         margin: auto;
+
+        margin-bottom: 30px;
+        
+        padding-inline: 10px;
     }
-    .h1-section::after {
+    #h1-midias::after {
         position: absolute;
 
         content: "";

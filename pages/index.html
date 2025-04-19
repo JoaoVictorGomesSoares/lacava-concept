@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="letreiro">
+    <div class="letreiro"> <!-- Essa div representa minha MARQUISE, a faixada do site -->
         <ul>
             <li>
                 <span class="info1">Envio Direto de Cabo Frio</span>
@@ -37,7 +37,7 @@
             </li>
         </ul>
 
-        <ul aria-hidden="true">
+        <ul aria-hidden="true"> <!-- Essa parte eu repito os elementos da marquise para causar a sensação de infinito na rolagem do letreiro! -->
             <li>
                 <span class="info1">Envio Direto de Cabo Frio</span>
                 <span class="bolinha">•</span>
@@ -68,11 +68,11 @@
     <header>
         <ul>
             <li>
-                <a href="#"><img src="../assets/images/header/lacava-logo-300x60.png" alt="logo Lacava"></a>
+                <a href="index.html"><img src="../assets/images/header/lacava-logo-300x60.png" alt="logo Lacava"></a> <!-- Esse link deve me levar de volta a pagina index.html Sempre!-->
             </li>
             <li>
-                <ul id="lista-cabeçalho">
-                    <li><a href="#">Inicio</a></li>
+                <ul id="lista-cabeçalho"> <!-- Cada ancora dessa lista deve me levar a uma pagina-->
+                    <li><a href="#">Inicio</a></li> 
                     <li><a href="#">Promoções</a></li>
                     <li><a href="#">Lacava Club</a></li>
                     <li><a href="#">Catálogo</a></li>
@@ -81,7 +81,7 @@
                 </ul>
             </li>
             <li>
-                <ul>
+                <ul> <!-- e cada botão desses deve abrir um pop-up ou uma aba responsiva-->
                     <li><a href="#"><img class="imagem-icone-menu" src="../assets/images/header/icon-perfil-64x73.png" alt="Icone Perfil"></a></li>
                     <li><a href="#"><img class="imagem-icone-menu" src="../assets/images/header/icon-lupa-64x64.png" alt="Icone Pesquisa"></a></li>
                     <li><a href="#"><img class="imagem-icone-menu" src="../assets/images/header/icon-carrinho-64x82.png" alt="Icone Carrinho"></a></li>
@@ -100,7 +100,7 @@
                 <h1>Liquidação de Verão</h1>
                 <div id="subtitulo-section">
                     <p>Nas compras acima de R$9.999,99 concorra a 1 Brinde</p>
-                    <a href="#">
+                    <a href="#"> <!-- Essa ancora deve me levar ao catalogo completo-->
                         <p>Ver Mais</p>
                         <input type="button" id="button" value=">"></input>
                     </a>
@@ -110,7 +110,7 @@
             <tbody>
                 <tr>
                     <td class="produto">
-                        <a href="#">
+                        <a href="#"> <!-- cada ancora dessa deve me levar a pagina especifica do produto-->
                             <div class="imagem-produto" id="imagem-produto-1">
                             </div>
                             <p class="nome">Óculos LACAVA #001</p>
@@ -171,7 +171,7 @@
     </picture>
 
     <section>
-        <ul id="lista-botoes-catalogos">
+        <ul id="lista-botoes-catalogos"> <!-- os input deve, alterar a tabela do iframe e tambem deve permanecer ativo com uma cor diferente! -->
             <li>
                 <a href="catalogos/novos.html" target="frame"><input id="botao-catalogo" type="button" value="Novos"></a>
             </li>
@@ -187,17 +187,35 @@
 
         </iframe>
 
-        <a href="#"><input type="button" value="ver todos os produtos" id="ver-produtos"></a>
-
-        <h1 class="h1-section">Mídias</h1>
+        <a href="#"><input type="button" value="ver todos os produtos" id="ver-produtos"></a> <!--essa ancora deve me levar ao catalogo completo-->
+    
+    </section>
+    <section>
+        <h1 id="h1-midias">Mídias</h1>
 
         <table id="tabela-midias">
             <tbody>
-                <tr id="linha-video">
+                <tr id="linha-video"><!-- Ao clicar sobre o video deve abri-lo como um pop-up na tela! -->
                     <td>
                         <a href="#">
                             <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
-                                seu navegador não suporta video
+                                seu navegador não suporta este video
+                            </video>
+                            <div class="sombra"></div>
+                            <div id="descriçao-produto">
+                                <img src="../assets/images/section/imagem_oculos1.png" width="50px" alt="imagem do produto do video">
+                                <div>
+                                    <p class="nome">Óculos #001</p>
+                                    <p class="valor">R$999.99</p>
+                                </div>
+                            </div>
+                        </a>
+                        <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
+                    </td>
+                    <td>
+                        <a href="#">
+                            <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
+                                seu navegador não suporta este video
                             </video>
                             <div class="sombra"></div>
                             <div id="descriçao-produto">
@@ -229,23 +247,7 @@
                     <td>
                         <a href="#">
                             <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
-                                seu navegador não suporta video
-                            </video>
-                            <div class="sombra"></div>
-                            <div id="descriçao-produto">
-                                <img src="../assets/images/section/imagem_oculos1.png" width="50px" alt="imagem do produto do video">
-                                <div>
-                                    <p class="nome">Óculos #001</p>
-                                    <p class="valor">R$999.99</p>
-                                </div>
-                            </div>
-                        </a>
-                        <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
-                    </td>
-                    <td>
-                        <a href="#">
-                            <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
-                                seu navegador não suporta video
+                                seu navegador não suporta este video
                             </video>
                             <div class="sombra"></div>
                             <div id="descriçao-produto">
@@ -267,9 +269,9 @@
         <h1 id="news-letter">Nossa Caixa De Entrada</h1>
         <p id="paragrafo-news-letter">Seja o primeiro(a) a receber as novidades e promoções da LACAVA em primeiríssima mão!!! <br> Não fique fora dessa.</p>
 
-        <form>
-            <input type="text" placeholder="Nome" id="input-nome">
-            <input type="email" placeholder="E-mail" id="input-email">
+        <form action="newsletter.php" method="post"> <!--o formulario deve salvar os dados do usario para eventual remarketing-->
+            <input type="text" placeholder="Nome" id="input-nome" required>
+            <input type="email" placeholder="E-mail" id="input-email" required>
             <input type="submit" value="Submit" id="input-enviar">
         </form>
 
@@ -303,30 +305,6 @@
                 </tr>
             </tbody>
         </table>
-
-        <!-- <ul id="lista-redes-sociais">
-            <li>
-                <a href="https://www.instagram.com/lacavaconcept._/" target="_blank">
-                    <img src="../assets/icones/icone-instagram.png" alt="Link pro Instagram">
-                    <p>Nosso Instagram</p>
-                    <input type="button" value="ver perfil">
-                </a>
-            </li>
-            <li>
-                <a href="" target="_blank">
-                    <img src="../assets/icones/icone-tiktok.png" alt="Link pro Tiktok">
-                    <p>Nosso Tiktok</p>
-                    <input type="button" value="ver perfil">
-                </a>
-            </li>
-            <li>
-                <a href="" target="_blank">
-                    <img src="../assets/icones/icone-whatsapp.png" alt="Link pro WhatsApp">
-                    <p>Nosso WhatsApp</p>
-                    <input type="button" value="ver perfil">
-                </a>
-            </li>
-        </ul> -->
 
         <h1 id="relatos-clientes">Relatos dos Clientes</h1>
         <p id="paragrafos-relatos-clientes">Histórias reais de pessoas que tiveram experiências incríveis com a nossa loja. Sinta-se à vontade para compartilhar a sua também e fazer parte dessa jornada. Sua opinião é muito importante para nós!</p>
