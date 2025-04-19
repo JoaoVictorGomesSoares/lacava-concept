@@ -270,8 +270,8 @@
         <p id="paragrafo-news-letter">Seja o primeiro(a) a receber as novidades e promoções da LACAVA em primeiríssima mão!!! <br> Não fique fora dessa.</p>
 
         <form action="newsletter.php" method="post"> <!--o formulario deve salvar os dados do usario para eventual remarketing-->
-            <input type="text" placeholder="Nome" id="input-nome" required>
-            <input type="email" placeholder="E-mail" id="input-email" required>
+            <input type="text" placeholder="Nome" id="input-nome" minlength="5" required>
+            <input type="email" placeholder="E-mail" id="input-email" minlength="5" required>
             <input type="submit" value="Submit" id="input-enviar">
         </form>
 
