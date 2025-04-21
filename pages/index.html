@@ -3,444 +3,351 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lacava Concept</title>
+    <title>Mobile First</title>
+
     <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/fonts.css">
-    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="letreiro"> <!-- Essa div representa minha MARQUISE, a faixada do site -->
+    <!--Faixada da Loja-->
+    <div id="Marquee">
+
+        <!-- Lista com os elementos da Marquise -->
         <ul>
             <li>
-                <span class="info1">Envio Direto de Cabo Frio</span>
+                <span>Envio Direto de Cabo Frio</span>
                 <span class="bolinha">•</span>
             </li>
             <li>
-                <span class="info2">Parcele em 3x Sem Juros</span>
+                <span>Parcele em 3x Sem Juros</span>
                 <span class="bolinha">•</span>
             </li>
             <li>
-                <span class="info3">Proteção Solar UV 400</span>
+                <span>Proteção Solar UV 400</span>
                 <span class="bolinha">•</span>
             </li>
             <li>
-                <span class="info1">Envio Direto de Cabo Frio</span>
+                <span>Envio Direto de Cabo Frio</span>
                 <span class="bolinha">•</span>
             </li>
             <li>
-                <span class="info2">Parcele em 3x Sem Juros</span>
+                <span>Parcele em 3x Sem Juros</span>
                 <span class="bolinha">•</span>
             </li>
             <li>
-                <span class="info3">Proteção Solar UV 400</span>
-                <span class="bolinha">•</span>
-            </li>
-        </ul>
-
-        <ul aria-hidden="true"> <!-- Essa parte eu repito os elementos da marquise para causar a sensação de infinito na rolagem do letreiro! -->
-            <li>
-                <span class="info1">Envio Direto de Cabo Frio</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span class="info2">Parcele em 3x Sem Juros</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span class="info3">Proteção Solar UV 400</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span class="info1">Envio Direto de Cabo Frio</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span class="info2">Parcele em 3x Sem Juros</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span class="info3">Proteção Solar UV 400</span>
+                <span>Proteção Solar UV 400</span>
                 <span class="bolinha">•</span>
             </li>
         </ul>
-    </div>
 
-    <header>
-        <ul>
-            <li>
-                <a href="index.html"><img src="../assets/images/header/lacava-logo-300x60.png" alt="logo Lacava"></a> <!-- Esse link deve me levar de volta a pagina index.html Sempre!-->
-            </li>
-            <li>
-                <ul id="lista-cabeçalho"> <!-- Cada ancora dessa lista deve me levar a uma pagina-->
-                    <li><a href="#">Inicio</a></li> 
-                    <li><a href="#">Promoções</a></li>
-                    <li><a href="#">Lacava Club</a></li>
-                    <li><a href="#">Catálogo</a></li>
-                    <li><a href="#">Guia de Rostos</a></li>
-                    <li><a href="#">Rastreio</a></li>
-                </ul>
-            </li>
-            <li>
-                <ul> <!-- e cada botão desses deve abrir um pop-up ou uma aba responsiva-->
-                    <li><a href="#"><img class="imagem-icone-menu" src="../assets/images/header/icon-perfil-64x73.png" alt="Icone Perfil"></a></li>
-                    <li><a href="#"><img class="imagem-icone-menu" src="../assets/images/header/icon-lupa-64x64.png" alt="Icone Pesquisa"></a></li>
-                    <li><a href="#"><img class="imagem-icone-menu" src="../assets/images/header/icon-carrinho-64x82.png" alt="Icone Carrinho"></a></li>
-                </ul>
-            </li>
-        </ul>
-    </header>
-
-    <picture>
-        <div id="fundo-principal"></div>
-    </picture>
-
-    <section>
-        <table>
-            <caption>
-                <h1>Liquidação de Verão</h1>
-                <div id="subtitulo-section">
-                    <p>Nas compras acima de R$9.999,99 concorra a 1 Brinde</p>
-                    <a href="#"> <!-- Essa ancora deve me levar ao catalogo completo-->
-                        <p>Ver Mais</p>
-                        <input type="button" id="button" value=">"></input>
-                    </a>
-                </div>
-            </caption>
-
-            <tbody>
-                <tr>
-                    <td class="produto">
-                        <a href="#"> <!-- cada ancora dessa deve me levar a pagina especifica do produto-->
-                            <div class="imagem-produto" id="imagem-produto-1">
-                            </div>
-                            <p class="nome">Óculos LACAVA #001</p>
-                            <p class="valor">R$9.999,99</p>
-                        </a>
-                    </td>
-                    <td class="produto">
-                        <a href="#">
-                            <div class="imagem-produto" id="imagem-produto-2">
-                            </div>
-                            <p class="nome">Óculos LACAVA #002</p>
-                            <p class="valor">R$9.999,99</p>
-                        </a>
-                    </td>
-                    <td class="produto">
-                        <a href="#">
-                            <div class="imagem-produto" id="imagem-produto-3">
-                            </div>
-                            <p class="nome">Óculos LACAVA #003</p>
-                            <p class="valor">R$9.999,99</p>
-                        </a>
-                    </td>
-                    <td class="produto">
-                        <a href="#">
-                            <div class="imagem-produto" id="imagem-produto-4">
-                            </div>
-                            <p class="nome">Óculos LACAVA #004</p>
-                            <p class="valor">R$9.999,99</p>
-                        </a>
-                    </td>
-                    <td class="produto">
-                        <a href="#">
-                            <div class="imagem-produto" id="imagem-produto-5">
-                            </div>
-                            <p class="nome">Óculos LACAVA #005</p>
-                            <p class="valor">R$9.999,99</p>
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <picture>
-        <div class="qualidade-unica" id="qualidade-unica-1">
-            <span>qualidade única</span>
-            <span>qualidade única</span>
-            <span>qualidade única</span>
-            <span>qualidade única</span>
-        </div>
-        <div id="fundo-secundario"></div>
-        <div class="qualidade-unica" id="qualidade-unica-2">
-            <span>qualidade única</span>
-            <span>qualidade única</span>
-            <span>qualidade única</span>
-            <span>qualidade única</span>
-        </div>
-    </picture>
-
-    <section>
-        <ul id="lista-botoes-catalogos"> <!-- os input deve, alterar a tabela do iframe e tambem deve permanecer ativo com uma cor diferente! -->
-            <li>
-                <a href="catalogos/novos.html" target="frame"><input id="botao-catalogo" type="button" value="Novos"></a>
-            </li>
-            <li>
-                <a href="catalogos/coleçao-nova.html" target="frame"><input id="botao-catalogo" type="button" value="Coleção Nova"></a>
-            </li>
-            <li>
-                <a href="catalogos/melhores.html" target="frame"><input id="botao-catalogo" type="button" value="Melhores"></a>
-            </li>
-        </ul>
-
-        <iframe id="tabela-catalogo" name="frame" src="catalogos/melhores.html">
-
-        </iframe>
-
-        <a href="#"><input type="button" value="ver todos os produtos" id="ver-produtos"></a> <!--essa ancora deve me levar ao catalogo completo-->
-    
-    </section>
-    <section>
-        <h1 id="h1-midias">Mídias</h1>
-
-        <table id="tabela-midias">
-            <tbody>
-                <tr id="linha-video"><!-- Ao clicar sobre o video deve abri-lo como um pop-up na tela! -->
-                    <td>
-                        <a href="#">
-                            <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
-                                seu navegador não suporta este video
-                            </video>
-                            <div class="sombra"></div>
-                            <div id="descriçao-produto">
-                                <img src="../assets/images/section/imagem_oculos1.png" width="50px" alt="imagem do produto do video">
-                                <div>
-                                    <p class="nome">Óculos #001</p>
-                                    <p class="valor">R$999.99</p>
-                                </div>
-                            </div>
-                        </a>
-                        <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
-                    </td>
-                    <td>
-                        <a href="#">
-                            <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
-                                seu navegador não suporta este video
-                            </video>
-                            <div class="sombra"></div>
-                            <div id="descriçao-produto">
-                                <img src="../assets/images/section/imagem_oculos1.png" width="50px" alt="imagem do produto do video">
-                                <div>
-                                    <p class="nome">Óculos #001</p>
-                                    <p class="valor">R$999.99</p>
-                                </div>
-                            </div>
-                        </a>
-                        <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
-                    </td>
-                    <td>
-                        <a href="#">
-                            <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
-                                seu navegador não suporta video
-                            </video>
-                            <div class="sombra"></div>
-                            <div id="descriçao-produto">
-                                <img src="../assets/images/section/imagem_oculos1.png" width="50px" alt="imagem do produto do video">
-                                <div>
-                                    <p class="nome">Óculos #001</p>
-                                    <p class="valor">R$999.99</p>
-                                </div>
-                            </div>
-                        </a>
-                        <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
-                    </td>
-                    <td>
-                        <a href="#">
-                            <video src="../assets/videos/lacava-video.mp4" loop muted autoplay>
-                                seu navegador não suporta este video
-                            </video>
-                            <div class="sombra"></div>
-                            <div id="descriçao-produto">
-                                <img src="../assets/images/section/imagem_oculos1.png" width="50px" alt="imagem do produto do video">
-                                <div>
-                                    <p class="nome">Óculos #001</p>
-                                    <p class="valor">R$999.99</p>
-                                </div>
-                            </div>
-                        </a>
-                        <input type="button" value="Adicionar ao carrinho" id="adicionar-carrinho">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section>
-        <h1 id="news-letter">Nossa Caixa De Entrada</h1>
-        <p id="paragrafo-news-letter">Seja o primeiro(a) a receber as novidades e promoções da LACAVA em primeiríssima mão!!! <br> Não fique fora dessa.</p>
-
-        <form action="newsletter.php" method="post"> <!--o formulario deve salvar os dados do usario para eventual remarketing-->
-            <input type="text" placeholder="Nome" id="input-nome" minlength="5" required>
-            <input type="email" placeholder="E-mail" id="input-email" minlength="5" required>
-            <input type="submit" value="Submit" id="input-enviar">
-        </form>
-
-        <h1 id="redes-sociais">Redes Sociais</h1>
-        <p id="paragrafo-redes-sociais">Siga-nos em nossas redes sociais para concorrer a descontos e ficar por dentro de todas as novidades!</p>
-
-        <table>
-            <tbody id="tabela-redes-sociais">
-                <tr id="linha-redes-sociais">
-                    <td>
-                        <a href="https://www.instagram.com/lacavaconcept._/" target="_blank">
-                            <img src="../assets/icones/icone-instagram.png" alt="Link pro Instagram">
-                            <p>Nosso Instagram</p>
-                            <input type="button" value="ver perfil">
-                        </a>
-                    </td>
-                    <td>
-                        <a href="" target="_blank">
-                            <img src="../assets/icones/icone-tiktok.png" alt="Link pro Tiktok">
-                            <p>Nosso Tiktok</p>
-                            <input type="button" value="ver perfil">
-                        </a>
-                    </td>
-                    <td>
-                        <a href="" target="_blank">
-                            <img src="../assets/icones/icone-whatsapp.png" alt="Link pro WhatsApp">
-                            <p>Nosso WhatsApp</p>
-                            <input type="button" value="ver perfil">
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h1 id="relatos-clientes">Relatos dos Clientes</h1>
-        <p id="paragrafos-relatos-clientes">Histórias reais de pessoas que tiveram experiências incríveis com a nossa loja. Sinta-se à vontade para compartilhar a sua também e fazer parte dessa jornada. Sua opinião é muito importante para nós!</p>
-
-        <table>
-            <caption>Avaliações dos Clientes:</caption>
-
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                    <td>
-                        <div class="container-avaliaçao"></div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-    </section>
-    
-    <section id="cem-mil">
-        <h1 id="numero">+100.000</h1>
-        <h1 id="texto">produtos vendidos para todo Brasil</h1>
-    </section>
-
-    <div class="letreiro" id="clientes">
-        <ul>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-        </ul>
+         <!-- Nessa parte eu repito os elementos para causar a sensação de infinito! -->
         <ul aria-hidden="true">
             <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
+                <span>Envio Direto de Cabo Frio</span>
+                <span class="bolinha">•</span>
             </li>
             <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
+                <span>Parcele em 3x Sem Juros</span>
+                <span class="bolinha">•</span>
             </li>
             <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
+                <span>Proteção Solar UV 400</span>
+                <span class="bolinha">•</span>
             </li>
             <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
+                <span>Envio Direto de Cabo Frio</span>
+                <span class="bolinha">•</span>
             </li>
             <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
+                <span>Parcele em 3x Sem Juros</span>
+                <span class="bolinha">•</span>
             </li>
             <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
-            </li>
-            <li>
-                <span><img id="foto-cliente" src="../assets/images/section/imagem-cliente.png" alt="imagem dos clientes"></span>
+                <span>Proteção Solar UV 400</span>
+                <span class="bolinha">•</span>
             </li>
         </ul>
     </div>
 
+    <!-- Cabeçalho do Site -->
+    <header>
+        <!-- Bar de Navegação -->
+        <nav>
+            <!-- Menu Sanduiche -->
+            <div id="menu">
+                <img class="icone" src="../assets/icones/menu.png" alt="icone de menu">
+            </div>
+
+            <!-- Logo da Loja -->
+            <div id="logo">
+                <img class="icone" src="../assets/images/header/lacava-logo-150x30.png" alt="">
+            </div>
+
+            <!-- Carrinho de compras -->
+            <div id="shop">
+                <img class="icone" src="../assets/icones/shop.png" alt="icone de carrinho">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slide de Imagens de Fundo -->
+    <div id="slideWallpaper">
+        <div id="slide">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+
+            <div class="slide s1">
+                <img src="../assets/images/picture/modelo1.jpg" alt="modelo usando óculos">
+            </div>
+
+            <div class="slide">
+                <img src="../assets/images/picture/modelo2.jpg" alt="modelo usando óculos">
+            </div>
+
+            <div class="slide">
+                <img src="../assets/images/picture/modelo3.jpg" alt="modelo usando óculos">
+            </div>
+        </div>
+
+        <div id="navigation">
+            <label class="bar" for="slide1"></label>
+            <label class="bar" for="slide2"></label>
+            <label class="bar" for="slide3"></label>
+        </div>
+    </div>
+
+    <!-- Primeiros Produtos do Site -->
+    <section id="Showcase">
+        <!--Titulo da Primeira Aba de Produtos -->
+        <h1>Liquidação de Verão</h1>
+        <p>
+            Leve um LACAVA para casa e concorra a um Prêmio <br>
+            <a href="#">Ver Mais
+            <input type="button" value=">"></a>
+        </p>
+
+        <!-- Catalogo de Produtos -->
+        <div id="firstCatalog">
+            <!--Item1-->
+            <div class="product">
+                <!-- Link pro Produto -->
+                <a href="">
+                    <!-- Imagem do Produto na Div-->
+                    <div class="imageProduct" id="Product1"></div>
+                    <p class="description">
+                        <span class="name">[nome]</span>
+                        <span class="value">[valor]</span>
+                        <span class="stock">[estoque]</span>
+                    </p>
+                </a>
+            </div>
+
+            <!--Item2-->
+            <div class="product">
+                <!-- Link pro Produto -->
+                <a href="">
+                    <!-- Imagem do Produto na Div-->
+                    <div class="imageProduct" id="Product2"></div>
+                    <p class="description">
+                        <span class="name">[nome]</span>
+                        <span class="value">[valor]</span>
+                        <span class="stock">[estoque]</span>
+                    </p>
+                </a>
+            </div>
+
+            <!--Item3-->
+            <div class="product">
+                <!-- Link pro Produto -->
+                <a href="">
+                    <!-- Imagem do Produto na Div-->
+                    <div class="imageProduct" id="Product3"></div>
+                    <p class="description">
+                        <span class="name">[nome]</span>
+                        <span class="value">[valor]</span>
+                        <span class="stock">[estoque]</span>
+                    </p>
+                </a>
+            </div>
+
+            <!--Item4-->
+            <div class="product">
+                <!-- Link pro Produto -->
+                <a href="">
+                    <!-- Imagem do Produto na Div-->
+                    <div class="imageProduct" id="Product4"></div>
+                    <p class="description">
+                        <span class="name">[nome]</span>
+                        <span class="value">[valor]</span>
+                        <span class="stock">[estoque]</span>
+                    </p>
+                </a>
+            </div>
+            
+            <!--Item5-->
+            <div class="product">
+                <!-- Link pro Produto -->
+                <a href="">
+                    <!-- Imagem do Produto na Div-->
+                    <div class="imageProduct" id="Product5"></div>
+                    <p class="description">
+                        <span class="name">[nome]</span>
+                        <span class="value">[valor]</span>
+                        <span class="stock">[estoque]</span>
+                    </p>
+                </a>
+            </div>
+
+            <!--Item6-->
+            <div class="product">
+                <!-- Link pro Produto -->
+                <a href="">
+                    <!-- Imagem do Produto na Div-->
+                    <div class="imageProduct" id="Product6"></div> 
+                    <p class="description">
+                        <span class="name">[nome]</span>
+                        <span class="value">[valor]</span>
+                        <span class="stock">[estoque]</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Botão Ver todos os Produtos-->
+        <a id="seeAll" href="" id="">
+            <input type="button" value="ver todos os produtos">
+        </a>
+    </section>
+
+    <!-- Plano de Fundo Secundario -->
+    <picture id="Wallpaper">
+        <h2>
+            <span>qualidade única</span>
+            <span>❂</span>
+            <span>qualidade única</span>
+        </h2>
+        <img src="../assets/images/picture/foto-capaN1.jpeg" alt="Homem correndo na praia">
+        <h2>
+            <span>qualidade única</span>
+            <span>❂</span>
+            <span>qualidade única</span>
+        </h2>
+    </picture>
+
+    <!-- Midias de video da Loja -->
+    <section id="Medias">
+        <h1>Mídias</h1>
+
+        <div id="videoScroll">
+            <div class="video">
+                <video src="../assets/videos/lacava-video.mp4" autoplay muted loop></video>
+                <div class="shadow"></div>
+                <div class="descriptionVideo">
+                    <p>
+                        <span class="name">[nome]</span>
+                        <span class="value">[valor]</span>
+                    </p>
+                </div>
+                <a href="">
+                    <input id="addShopBtn" type="button" value="adicionar ao carrinho"> 
+                </a>
+            </div>
+            <div class="video">
+                <video src="../assets/videos/lacava-video.mp4" autoplay muted loop></video>
+                <div class="shadow"></div>
+                <div class="descriptionVideo">
+                    <p>
+                        <span class="name">[nome]</span>
+                        <span class="value">[valor]</span>
+                    </p>
+                </div>
+                <a href="">
+                    <input id="addShopBtn" type="button" value="adicionar ao carrinho"> 
+                </a>
+            </div>
+            <div class="video">
+                <video src="../assets/videos/lacava-video.mp4" autoplay muted loop></video>
+                <div class="shadow"></div>
+                <div class="descriptionVideo">
+                    <p>
+                        <span class="name">[nome]</span>
+                        <span class="value">[valor]</span>
+                    </p>
+                </div>
+                <a href="">
+                    <input id="addShopBtn" type="button" value="adicionar ao carrinho"> 
+                </a>
+            </div>
+            <div class="video">
+                <video src="../assets/videos/lacava-video.mp4" autoplay muted loop></video>
+                <div class="shadow"></div>
+                <div class="descriptionVideo">
+                    <p>
+                        <span class="name">[nome]</span>
+                        <span class="value">[valor]</span>
+                    </p>
+                </div>
+                <a href="">
+                    <input id="addShopBtn" type="button" value="adicionar ao carrinho"> 
+                </a>
+            </div>
+            <div class="video">
+                <video src="../assets/videos/lacava-video.mp4" autoplay muted loop></video>
+                <div class="shadow"></div>
+                <div class="descriptionVideo">
+                    <p>
+                        <span class="name">[nome]</span>
+                        <span class="value">[valor]</span>
+                    </p>
+                </div>
+                <a href="">
+                    <input id="addShopBtn" type="button" value="adicionar ao carrinho"> 
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formularios-->
+    <section id="Forms">
+        <h1>Nossa Caixa de Entrada</h1>
+        <p>
+            Seja o primeiro(a) a receber as novidades e promoções da LACAVA em primeirissíma mão ! <br>
+            Não fique fora dessa.
+        </p>
+        <form action="Newsllater.php">
+            <input type="text" name="name" id="iname" placeholder="Nome" required>
+            <input type="email" name="email" id="iemail" placeholder="E-mail" required>
+            <input type="submit" id="isubmit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Redes Sociais -->
+    <section id="SocialMedias">
+        <h1>Nossas Redes Sociais</h1>
+        <p>
+            Siga-nos em nossas redes sociais para concorrer a descontos e ficar por dentro de todas as novidades!
+        </p>
+
+        <div id="Links">
+            <a class="Social" id="Instagram">
+                <img src="../assets/icones/icone-instagram.png" alt="icone do intagram">
+                <p>Nosso Instagram</p>
+                <input type="button" value="ver perfil" class="isocial">
+            </a>
+            <a class="Social" id="Tiktok">
+                <img src="../assets/icones/icone-tiktok.png" alt="icone do Tiktok">
+                <p>Nosso TikTok</p>
+                <input type="button" value="ver perfil" class="isocial">
+            </a>
+            <a class="Social" id="WhatsApp">
+                <img src="../assets/icones/icone-whatsapp.png" alt="icone do WhatsApp">
+                <p>Nosso WhatsApp</p>
+                <input type="button" value="ver perfil" class="isocial">
+            </a>
+        </div>
+    </section>
+
+    <!-- Ondas do Rodapé-->
     <section id="wave">
         <div class="wave wave1"> </div>
         <div class="wave wave2"> </div>
@@ -449,7 +356,7 @@
     </section>
 
     <footer>
-        <div id="container-footer">
+        <div id="containerFooter">
             <ul>
                 <h2>Contato</h2>
                 <li>Segunda à Sexta 09h às 18h</li>
@@ -477,9 +384,9 @@
                 <li id="link"><a href="#">Comprei mas não gostei, posso trocar?</a></li>
             </ul>
         </div>
-        <div id="rodape">
-            <address id="copyright"><small>&copy; <a href="https://github.com/JoaoVictorGomesSoares/">JoãoVictorGomesSoares</a> copyright - 2025. Todos os direitos reservados.</small></address>
-            <img src="../assets/icones/meios-de-pagamento.png" alt="bandeiras dos cartões de crédito">
+        <div id="footer">
+            <address><small>&copy; 2025, <a href="https://github.com/JoaoVictorGomesSoares/">JoãoVictorGomesSoares</a>. <br> Todos os direitos reservados.</small></address>
+                <img src="../assets/icones/meios-de-pagamento.png" alt="bandeiras dos cartões de crédito">
         </div>
     </footer>
 </body>
