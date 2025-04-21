@@ -6,6 +6,7 @@
     <title>Mobile First</title>
 
     <link rel="stylesheet" href="../styles/global.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!--Faixada da Loja-->
@@ -79,7 +80,7 @@
 
             <!-- Logo da Loja -->
             <div id="logo">
-                <img class="icone" src="../assets/images/header/lacava-logo-150x30.png" alt="">
+                <img class="icone" src="../assets/images/lacava-logo-300x60.png" alt="">
             </div>
 
             <!-- Carrinho de compras -->
@@ -95,17 +96,27 @@
             <input type="radio" name="slide" id="slide1" checked>
             <input type="radio" name="slide" id="slide2">
             <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
 
             <div class="slide s1">
-                <img src="../assets/images/picture/modelo1.jpg" alt="modelo usando óculos">
+                <img src="../assets/images/model1.jpg" alt="modelo usando óculos">
             </div>
 
             <div class="slide">
-                <img src="../assets/images/picture/modelo2.jpg" alt="modelo usando óculos">
+                <img src="../assets/images/model2.jpg" alt="modelo usando óculos">
             </div>
 
             <div class="slide">
-                <img src="../assets/images/picture/modelo3.jpg" alt="modelo usando óculos">
+                <img src="../assets/images/model3.jpg" alt="modelo usando óculos">
+            </div>
+
+            <div class="slide">
+                <img src="../assets/images/model4.jpg" alt="modelo usando óculos">
+            </div>
+
+            <div class="slide">
+                <img src="../assets/images/model5.jpg" alt="modelo usando óculos">
             </div>
         </div>
 
@@ -113,6 +124,8 @@
             <label class="bar" for="slide1"></label>
             <label class="bar" for="slide2"></label>
             <label class="bar" for="slide3"></label>
+            <label class="bar" for="slide4"></label>
+            <label class="bar" for="slide5"></label>
         </div>
     </div>
 
@@ -135,9 +148,9 @@
                     <!-- Imagem do Produto na Div-->
                     <div class="imageProduct" id="Product1"></div>
                     <p class="description">
-                        <span class="name">[nome]</span>
-                        <span class="value">[valor]</span>
-                        <span class="stock">[estoque]</span>
+                        <span class="name">Óculos Grande</span>
+                        <span class="value">R$123,45</span>
+                        <span class="stock">Disponível</span>
                     </p>
                 </a>
             </div>
@@ -149,9 +162,9 @@
                     <!-- Imagem do Produto na Div-->
                     <div class="imageProduct" id="Product2"></div>
                     <p class="description">
-                        <span class="name">[nome]</span>
-                        <span class="value">[valor]</span>
-                        <span class="stock">[estoque]</span>
+                        <span class="name">Óculos Quadrado</span>
+                        <span class="value">R$123,45</span>
+                        <span class="stock">Disponível</span>
                     </p>
                 </a>
             </div>
@@ -163,9 +176,9 @@
                     <!-- Imagem do Produto na Div-->
                     <div class="imageProduct" id="Product3"></div>
                     <p class="description">
-                        <span class="name">[nome]</span>
-                        <span class="value">[valor]</span>
-                        <span class="stock">[estoque]</span>
+                        <span class="name">Óculos Verde fem</span>
+                        <span class="value">R$123,45</span>
+                        <span class="stock">Disponível</span>
                     </p>
                 </a>
             </div>
@@ -177,9 +190,9 @@
                     <!-- Imagem do Produto na Div-->
                     <div class="imageProduct" id="Product4"></div>
                     <p class="description">
-                        <span class="name">[nome]</span>
-                        <span class="value">[valor]</span>
-                        <span class="stock">[estoque]</span>
+                        <span class="name">Óculos Azul fem</span>
+                        <span class="value">R$123,45</span>
+                        <span class="stock">Esgotado</span>
                     </p>
                 </a>
             </div>
@@ -191,9 +204,9 @@
                     <!-- Imagem do Produto na Div-->
                     <div class="imageProduct" id="Product5"></div>
                     <p class="description">
-                        <span class="name">[nome]</span>
-                        <span class="value">[valor]</span>
-                        <span class="stock">[estoque]</span>
+                        <span class="name">Óculos Estiloso</span>
+                        <span class="value">R$123,45</span>
+                        <span class="stock">Esgotado</span>
                     </p>
                 </a>
             </div>
@@ -205,9 +218,9 @@
                     <!-- Imagem do Produto na Div-->
                     <div class="imageProduct" id="Product6"></div> 
                     <p class="description">
-                        <span class="name">[nome]</span>
-                        <span class="value">[valor]</span>
-                        <span class="stock">[estoque]</span>
+                        <span class="name">Óculos Redondo</span>
+                        <span class="value">R$123,45</span>
+                        <span class="stock">Disponível</span>
                     </p>
                 </a>
             </div>
@@ -219,19 +232,26 @@
         </a>
     </section>
 
-    <!-- Plano de Fundo Secundario -->
+    <!-- Plano de Fundo do Meio do Site -->
     <picture id="Wallpaper">
         <h2>
             <span>qualidade única</span>
             <span>❂</span>
             <span>qualidade única</span>
         </h2>
-        <img src="../assets/images/picture/foto-capaN1.jpeg" alt="Homem correndo na praia">
+        <img src="../assets/images/model6.jpg" alt="Homem correndo na praia">
         <h2>
             <span>qualidade única</span>
             <span>❂</span>
             <span>qualidade única</span>
         </h2>
+        <div id="image-message">
+            <h3>Se interessou por esse modelo?</h3>
+            <p>
+                Clique aqui para acessar está coleção
+                <input type="button" value=">">
+            </p>
+        </div>
     </picture>
 
     <!-- Midias de video da Loja -->
@@ -355,6 +375,7 @@
         <div class="wave wave4"> </div>
     </section>
 
+    <!-- Rodapé do Site-->
     <footer>
         <div id="containerFooter">
             <ul>

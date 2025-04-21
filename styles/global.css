@@ -86,13 +86,13 @@ div#slideWallpaper {
     overflow: hidden;
 
     #slide {
-        width: 300%;
+        width: 500%;
         height: 100%;
         display: flex;
 
         input { display: none; }
         img { width: 100%; }
-        .slide { width: 33.3%; transition: .6s; }
+        .slide { width: 20%; transition: .6s; }
     }
     
     #navigation {
@@ -103,17 +103,19 @@ div#slideWallpaper {
         display: flex;
 
         .bar {
-            width: 70px;
-            height: 15px;
-            border: 1px solid var(--white);
+            width: 60px;
+            height: 5px;
+            background-color: var(--white);
             margin-inline: 10px;
             border-radius: 5px;
             cursor: pointer;
         }
     }
     #slide1:checked ~ .s1 { margin-left: 0; }
-    #slide2:checked ~ .s1 { margin-left: -33.3%; }
-    #slide3:checked ~ .s1 { margin-left: -66.6%; }
+    #slide2:checked ~ .s1 { margin-left: -20%; }
+    #slide3:checked ~ .s1 { margin-left: -40%; }
+    #slide4:checked ~ .s1 { margin-left: -60%; }
+    #slide5:checked ~ .s1 { margin-left: -80%; }
 }
 
 section#Showcase { margin: 20px; }
@@ -135,7 +137,7 @@ a#seeAll > input {
     color: var(--white);
     border: none;
     border-radius: 5px;
-    margin-block: 20px;
+    margin-block: 20px 50px;
 }
 
 div#firstCatalog {
@@ -147,21 +149,21 @@ div#firstCatalog {
 
     div.product { width: 50%; }
     div.imageProduct {
-        width: 100%; height: 187px;
+        width: 180px; height: 180px;
         background-position: center center;
         border-radius: 25px;
     }
-    #Product1 { background-image: url(../assets/images/section/imagem_oculos1.png); background-size: cover;}
+    #Product1 { background-image: url(../assets/images/glasses1.png); background-size: contain; background-repeat: no-repeat;}
     
-    #Product2 { background-image: url(../assets/images/section/imagem_oculos2.png); background-size: cover;}
+    #Product2 { background-image: url(../assets/images/glasses2.png); background-size: contain; background-repeat: no-repeat;}
     
-    #Product3 { background-image: url(../assets/images/section/imagem_oculos3.png); background-size: cover;}
+    #Product3 { background-image: url(../assets/images/glasses3.png); background-size: contain; background-repeat: no-repeat;}
     
-    #Product4 { background-image: url(../assets/images/section/imagem_oculos4.png); background-size: cover;}
+    #Product4 { background-image: url(../assets/images/glasses4.png); background-size: contain; background-repeat: no-repeat;}
     
-    #Product5 { background-image: url(../assets/images/section/imagem_oculos5.png); background-size: cover;}
+    #Product5 { background-image: url(../assets/images/glasses5.png); background-size: contain; background-repeat: no-repeat;}
     
-    #Product6 { background-image: url(../assets/images/section/imagem_oculos2.png); background-size: cover;}
+    #Product6 { background-image: url(../assets/images/glasses6.png); background-size: contain; background-repeat: no-repeat;}
 
     p.description {
         display: flex;
@@ -178,6 +180,7 @@ div#firstCatalog {
 picture#Wallpaper {
     width: 100vw;
     display: block;
+    position: relative;
     
     h2 { 
         background-color: var(--darkerWhite); 
@@ -190,6 +193,30 @@ picture#Wallpaper {
         display: block;
     }
     img { width: 100%; display: block;}
+
+    div#image-message {
+        margin-left: 8px;
+        width: 95vw;
+        background-color: var(--white);
+        border-radius: 30px;
+        padding: 5px 30px;
+        position: absolute;
+        bottom: 80px;
+        box-shadow: 0px 5px 5px var(--shadowColor);
+
+        h3 { font-weight: 600;}
+        p { font-size: 0.9em; }
+        input {
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+            background: transparent;
+            color: var(--regular);
+            width: 25px; height: 25px;
+            border: 1px solid var(--regular);
+            border-radius: 50%;
+        }
+    }
 }
 
 section#Medias {
@@ -212,6 +239,7 @@ section#Medias {
     video, .shadow { 
         display: block;
         width: 230px;
+        height: 408.9px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
@@ -267,7 +295,7 @@ section#SocialMedias {
 
         a { 
             border: 1px solid var(--regular); 
-            width: 100px; height: auto;
+            width: 30%; height: auto;
             display: block; 
             padding-block: 20px;
         }
@@ -277,7 +305,8 @@ section#SocialMedias {
             background: transparent;
             color: var(--regular);
             border: 1px solid var(--regular);
-            padding: 2px 10px;
+            padding-block: 2px;
+            width: 90%;
         }
     }
 }
@@ -291,7 +320,7 @@ section#wave {
         bottom: 0;
         left: 0;
         width: 100%; height: 50px;
-        background-image: url("../assets/images/section/wave.png");
+        background-image: url("../assets/images/wave.png");
         background-size: 1000px 50px;
     }
     .wave1 {
@@ -346,7 +375,7 @@ footer {
         position: absolute;
         bottom: 0;
 
-        small, a { color: #ffffff80; font-style: italic; }
+        small, a { color: #ffffff80; font-style: italic; font-size: 0.5em; }
     }
 }
 
