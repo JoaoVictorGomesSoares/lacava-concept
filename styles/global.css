@@ -103,7 +103,7 @@ div#slideWallpaper {
         display: flex;
 
         .bar {
-            width: 60px;
+            width: 13vw;
             height: 5px;
             background-color: var(--white);
             margin-inline: 10px;
@@ -141,15 +141,16 @@ a#seeAll > input {
 }
 
 div#firstCatalog {
-    width: 100%; height: 900px;
+    width: 100%; height: auto;
     margin-block: 20px;
     display: flex;
     flex-flow: row wrap;
-    align-content:stretch;
+    align-content: stretch;
 
-    div.product { width: 50%; }
+    div.product { width: 50%;}
     div.imageProduct {
-        width: 180px; height: 180px;
+        margin: auto;
+        width: 40vw; height: 40vw;
         background-position: center center;
         border-radius: 25px;
     }
@@ -375,7 +376,7 @@ footer {
         position: absolute;
         bottom: 0;
 
-        small, a { color: #ffffff80; font-style: italic; font-size: 0.5em; }
+        small, a { color: #ffffff80; font-style: italic; font-size: 0.7em; }
     }
 }
 
