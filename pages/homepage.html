@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile First</title>
+    <title>HomepageMobile</title>
 
     <link rel="stylesheet" href="../styles/global.css">
-    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/homepage.css">
 
-    
+
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Menu Sanduiche -->
@@ -101,8 +102,8 @@
             </div>
 
             <!-- Carrinho de compras -->
-            <div id="shop">
-                <img class="icone" src="../assets/icons/shop.png" alt="icone de carrinho">
+            <div id="cart">
+                <a href="cart.html"><img class="icone" src="../assets/icons/cart.png" alt="icone de carrinho"></a>
             </div>
         </nav>
     </header>
@@ -118,22 +119,63 @@
 
             <div class="slide s1">
                 <img src="../assets/images/model1.jpg" alt="modelo usando óculos">
+
+                <div class="slideMessage">
+                    <h2 class="message">
+                        <span class="m1">COLEÇÃO VERÃO</span>
+                        <span class="m2">COMPRE 1 LEVE 2</span>
+                        <span class="m3">frete grátis limitado</span>
+                        <a class="button" href="">VER AGORA</a>
+                    </h2>
+                </div>
             </div>
 
             <div class="slide">
                 <img src="../assets/images/model2.jpg" alt="modelo usando óculos">
+
+                <div class="slideMessage">
+                    <h2 class="message">
+                        <span class="m1">ÓCULOS LACAVA</span>
+                        <span class="m2">2 POR R$---,--</span>
+                    </h2>
+                </div>
             </div>
 
             <div class="slide">
                 <img src="../assets/images/model3.jpg" alt="modelo usando óculos">
+
+                <div class="slideMessage">
+                    <h2 class="message">
+                        <span class="m1">BEST-SELLERS</span>
+                        <span class="m2">ÓCULOS LACAVA</span>
+                        <span class="m3">+ coleção nova</span>
+                        <a class="button" href="">COMPRAR AGORA</a>
+                    </h2>
+                </div>
             </div>
 
             <div class="slide">
                 <img src="../assets/images/model4.jpg" alt="modelo usando óculos">
+
+                <div class="slideMessage">
+                    <h2 class="message">
+                        <span class="m1">SEE THE WORLD</span>
+                        <span class="m2">LACAVA CONCEPT</span>
+                        <span class="m3">veja o mundo através de um LACAVA</span>
+                        <a class="button" href="">VER COLEÇÃO</a>
+                    </h2>
+                </div>
             </div>
 
             <div class="slide">
                 <img src="../assets/images/model5.jpg" alt="modelo usando óculos">
+
+                <div class="slideMessage">
+                    <h2 class="message">
+                        <span class="m2">LCVCPT</span>
+                        <span class="m3">Sua nova forma de ver o mundo.</span>
+                    </h2>
+                </div>
             </div>
         </div>
 
@@ -167,7 +209,7 @@
                     <p class="description">
                         <span class="name">Óculos Grande</span>
                         <span class="value">R$123,45</span>
-                        <span class="stock">Disponível</span>
+                        <span class="stock"> <img class="glassesIcon" src="../assets/icons/sunglasses.png" alt="icone de óculos">Disponível</span>
                     </p>
                 </a>
             </div>
@@ -181,7 +223,7 @@
                     <p class="description">
                         <span class="name">Óculos Quadrado</span>
                         <span class="value">R$123,45</span>
-                        <span class="stock">Disponível</span>
+                        <span class="stock"> <img class="glassesIcon" src="../assets/icons/sunglasses.png" alt="icone de óculos">Disponível</span>
                     </p>
                 </a>
             </div>
@@ -195,7 +237,7 @@
                     <p class="description">
                         <span class="name">Óculos Verde fem</span>
                         <span class="value">R$123,45</span>
-                        <span class="stock">Disponível</span>
+                        <span class="stock"> <img class="glassesIcon" src="../assets/icons/sunglasses.png" alt="icone de óculos">Disponível</span>
                     </p>
                 </a>
             </div>
@@ -209,7 +251,7 @@
                     <p class="description">
                         <span class="name">Óculos Azul fem</span>
                         <span class="value">R$123,45</span>
-                        <span class="stock">Esgotado</span>
+                        <span class="stock"> <img class="glassesIcon" src="../assets/icons/sunglasses.png" alt="icone de óculos">Esgotado</span>
                     </p>
                 </a>
             </div>
@@ -223,7 +265,7 @@
                     <p class="description">
                         <span class="name">Óculos Estiloso</span>
                         <span class="value">R$123,45</span>
-                        <span class="stock">Esgotado</span>
+                        <span class="stock"> <img class="glassesIcon" src="../assets/icons/sunglasses.png" alt="icone de óculos">Esgotado</span>
                     </p>
                 </a>
             </div>
@@ -237,7 +279,7 @@
                     <p class="description">
                         <span class="name">Óculos Redondo</span>
                         <span class="value">R$123,45</span>
-                        <span class="stock">Disponível</span>
+                        <span class="stock"> <img class="glassesIcon" src="../assets/icons/sunglasses.png" alt="icone de óculos">Disponível</span>
                     </p>
                 </a>
             </div>
@@ -251,17 +293,7 @@
 
     <!-- Plano de Fundo do Meio do Site -->
     <picture id="Wallpaper">
-        <h2>
-            <span>qualidade única</span>
-            <span>❂</span>
-            <span>qualidade única</span>
-        </h2>
         <img src="../assets/images/model6.jpg" alt="Homem correndo na praia">
-        <h2>
-            <span>qualidade única</span>
-            <span>❂</span>
-            <span>qualidade única</span>
-        </h2>
         <!-- Div da Mensagem sobre a imagem-->
         <div id="image-message">
             <a href="">
@@ -365,26 +397,14 @@
     <section id="SocialMedias">
         <h1>Nossas Redes Sociais</h1>
         <p>
-            Siga-nos em nossas redes sociais para concorrer a descontos e ficar por dentro de todas as novidades!
+            Siga-nos em nossas redes sociais para acompanhar <span>promoções</span> e ver o que nossos clientes estão falando da experiência <span>LACAVA</span>!
         </p>
 
-        <div id="Links">
-            <a href="https://www.instagram.com/lacavaconcept._/" target="_blank" class="Social" id="Instagram">
-                <img src="../assets/icons/instagram-icon.png" alt="icone do intagram">
-                <p>Nosso Instagram</p>
-                <input type="button" value="ver perfil" class="isocial">
-            </a>
-            <a href="" class="Social" id="Tiktok">
-                <img src="../assets/icons/tiktok-icon.png" alt="icone do Tiktok">
-                <p>Nosso TikTok</p>
-                <input type="button" value="ver perfil" class="isocial">
-            </a>
-            <a href="" class="Social" id="WhatsApp">
-                <img src="../assets/icons/whatsapp-icon.png" alt="icone do WhatsApp">
-                <p>Nosso WhatsApp</p>
-                <input type="button" value="ver perfil" class="isocial">
-            </a>
-        </div>
+        <h2>
+            <a href="https://www.instagram.com/lacavaconcept._/" target="_blank">Nosso Instagram: @lacavaconcept._</a>
+            <a href="" target="_blank">Nosso Tiktok: @tiktokperfillacava</a>
+            <a href="" target="_blank">Nosso WhatsApp: (00)0000-0000</a>
+        </h2>
     </section>
 
     <!-- Ondas do Rodapé-->
