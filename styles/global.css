@@ -385,6 +385,7 @@ footer {
 
 div.containerBurguerMenu {
     position: absolute;
+    display: none;
     transform: translateX(-100%);
     width: 100vw; height: 100vh;
     display: flex;
@@ -395,6 +396,7 @@ div.containerBurguerMenu {
 }
 menu.burguerMenu {
     position: absolute;
+    display: none;
     background-color: var(--white);
     width: 90vw; height: 90vh;
     padding: 20px;
