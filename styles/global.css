@@ -72,7 +72,7 @@ header > nav {
     padding-block: 15px;
     margin: auto;
 
-    #menu, #logo, #shop { z-index: 2;}
+    #menu, #logo, #shop { z-index: 1; cursor: pointer;}
     .icone { max-height: 25px;}
 }
 
@@ -327,28 +327,28 @@ section#wave {
     .wave1 {
         animation: waves-direita 10s linear infinite;
         animation-delay: 0s;
-        z-index: 10;
+        z-index: 4;
         opacity: 0.9;
         bottom: 0;
     }
     .wave2 {
         animation: waves-esquerda 7s linear infinite;
         animation-delay: -5s;
-        z-index: 9;
+        z-index: 3;
         opacity: 0.7;
         bottom: 0px;
     }
     .wave3 {
         animation: waves-direita 8s linear infinite;
         animation-delay: -10s;
-        z-index: 8;
+        z-index: 2;
         opacity: 0.5;
         bottom: 0px;
     }
     .wave4 {
         animation: waves-esquerda 5s linear infinite;
         animation-delay: -15s;
-        z-index: 7;
+        z-index: 1;
         opacity: 0.3;
         bottom: 0px;
     }
@@ -375,8 +375,38 @@ footer {
         display: flex; flex-flow: column nowrap;
         position: absolute;
         bottom: 0;
+        margin-bottom: 20px;
 
-        small, a { color: #ffffff80; font-style: italic; font-size: 0.7em; }
+        a { color: #ffffff80; font-style: italic; font-size: 0.7em; }
     }
 }
 
+
+
+div.containerBurguerMenu {
+    position: absolute;
+    transform: translateX(-100%);
+    width: 100vw; height: 100vh;
+    display: flex;
+    justify-content: center; align-items: center;
+    z-index: 5;
+
+    transition: .3s;
+}
+menu.burguerMenu {
+    position: absolute;
+    background-color: var(--white);
+    width: 90vw; height: 90vh;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 5;
+
+    a, span { font-size: 2em; line-height: 80px;}
+    span {
+        border: 1px black solid; 
+        border-radius: 50%;
+        padding-inline: 12px;
+    }
+    
+    display: none;
+}
