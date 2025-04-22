@@ -7,12 +7,14 @@
 
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+
+    
 </head>
 <body>
     <!-- Menu Sanduiche -->
     <div id="container" class="containerBurguerMenu">
         <menu id="itens" class="burguerMenu">
-            <span onclick="fechar()">×</span>
+            <span onclick="menuclose()">×</span>
             <ul>
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Promoções</a></li>
@@ -85,12 +87,12 @@
     </div>
 
     <!-- Cabeçalho do Site -->
-    <header>
+    <header id="header">
         <!-- Barra de Navegação -->
         <nav>
             <!-- Menu Sanduiche -->
             <div id="menu">
-                <img class="icone" src="../assets/icons/menu.png" alt="icone de menu" onclick="abrir()">
+                <img class="icone" src="../assets/icons/menu.png" alt="icone de menu" onclick="menuopen()">
             </div>
 
             <!-- Logo da Loja -->
@@ -430,13 +432,6 @@
         </div>
     </footer>
 
-    <script>
-        function abrir() {
-            container.style.transform = 'translateY(0)'
-        }
-        function fechar() {
-            container.style.transform = 'translateY(-100%)'
-        }
-    </script>
+    <script src="../script/script.js"></script>
 </body>
 </html>
