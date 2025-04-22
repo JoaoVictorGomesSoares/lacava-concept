@@ -319,7 +319,7 @@ section#SocialMedias {
     h1 { font-size: 1.5em; font-weight: 400;}
     p { margin-block: 20px;}
     h2 { display: flex; flex-flow: column nowrap;}
-    a { font-weight: 500;}
+    a { font-weight: 500; white-space: nowrap;}
     span { font-weight: 600;}
 }
 
