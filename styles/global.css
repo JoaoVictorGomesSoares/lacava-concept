@@ -385,10 +385,10 @@ footer {
 
 div.containerBurguerMenu {
     position: absolute;
-    transform: translateX(-100%);
+    transform: translateY(-100%);
     width: 100vw; height: 100vh;
     display: flex;
-    justify-content: center; align-items: center;
+    justify-content: center; align-items: top;
     z-index: 5;
 
     transition: .3s;
@@ -396,9 +396,12 @@ div.containerBurguerMenu {
 menu.burguerMenu {
     position: absolute;
     background-color: var(--white);
-    width: 90vw; height: 90vh;
+    width: 95vw; height: 90vh;
     padding: 20px;
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 40px black;
 
     a, span { font-size: 2em; line-height: 80px;}
     span {
