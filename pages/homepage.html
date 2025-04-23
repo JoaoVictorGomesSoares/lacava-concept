@@ -14,8 +14,8 @@
     <!-- Menu Sanduiche -->
     <div id="container" class="containerBurguerMenu">
         <menu id="itens" class="burguerMenu">
-            <span onclick="menuclose()">×</span>
-            <ul>
+            <span id="iconeMenuHamburguer" onclick="menuclose()">×</span>
+            <ul id="listLinksMenu">
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Promoções</a></li>
                 <li><a href="#">LACAVA Club</a></li>
@@ -31,58 +31,34 @@
 
         <!-- Lista com os elementos da Marquise -->
         <ul>
-            <li>
-                <span>Envio Direto de Cabo Frio</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span>Parcele em 3x Sem Juros</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span>Proteção Solar UV 400</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span>Envio Direto de Cabo Frio</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span>Parcele em 3x Sem Juros</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span>Proteção Solar UV 400</span>
-                <span class="bolinha">•</span>
-            </li>
+            <li><span>Envio Direto de Cabo Frio</span></li>
+            <li><span>•</span></li>
+            <li><span>Parcele em 3x Sem Juros</span></li>
+            <li><span>•</span></li>
+            <li><span>Proteção Solar UV 400</span></li>
+            <li><span>•</span></li>
+            <li><span>Envio Direto de Cabo Frio</span></li>
+            <li><span>•</span></li>
+            <li><span>Parcele em 3x Sem Juros</span></li>
+            <li><span>•</span></li>
+            <li><span>Proteção Solar UV 400</span></li>
+            <li><span>•</span></li>
         </ul>
 
          <!-- Nessa parte eu repito os elementos para causar a sensação de infinito! -->
         <ul aria-hidden="true">
-            <li>
-                <span>Envio Direto de Cabo Frio</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span>Parcele em 3x Sem Juros</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span>Proteção Solar UV 400</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span>Envio Direto de Cabo Frio</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span>Parcele em 3x Sem Juros</span>
-                <span class="bolinha">•</span>
-            </li>
-            <li>
-                <span>Proteção Solar UV 400</span>
-                <span class="bolinha">•</span>
-            </li>
+            <li><span>Envio Direto de Cabo Frio</span></li>
+            <li><span>•</span></li>
+            <li><span>Parcele em 3x Sem Juros</span></li>
+            <li><span>•</span></li>
+            <li><span>Proteção Solar UV 400</span></li>
+            <li><span>•</span></li>
+            <li><span>Envio Direto de Cabo Frio</span></li>
+            <li><span>•</span></li>
+            <li><span>Parcele em 3x Sem Juros</span></li>
+            <li><span>•</span></li>
+            <li><span>Proteção Solar UV 400</span></li>
+            <li><span>•</span></li>
         </ul>
     </div>
 
@@ -117,62 +93,62 @@
             <input type="radio" name="slide" id="slide5">
 
             <div class="slide s1">
-                <img src="../assets/images/model1.jpg" alt="modelo usando óculos">
+                <img class="slideImage" src="../assets/images/model1.jpg" alt="modelo usando óculos">
 
                 <div class="slideMessage">
                     <h2 class="message">
-                        <span class="m1">COLEÇÃO VERÃO</span>
-                        <span class="m2">COMPRE 1 LEVE 2</span>
-                        <span class="m3">frete grátis limitado</span>
+                        <span class="slideText m1">COLEÇÃO VERÃO</span>
+                        <span class="slideText m2">COMPRE 1 LEVE 2</span>
+                        <span class="slideText m3">frete grátis limitado</span>
                         <a class="button" href="">VER AGORA</a>
                     </h2>
                 </div>
             </div>
 
             <div class="slide">
-                <img src="../assets/images/model2.jpg" alt="modelo usando óculos">
+                <img class="slideImage" src="../assets/images/model2.jpg" alt="modelo usando óculos">
 
                 <div class="slideMessage">
                     <h2 class="message">
-                        <span class="m1">ÓCULOS LACAVA</span>
-                        <span class="m2">2 POR R$---,--</span>
+                        <span class="slideText m1">ÓCULOS LACAVA</span>
+                        <span class="slideText m2">2 POR R$---,--</span>
                     </h2>
                 </div>
             </div>
 
             <div class="slide">
-                <img src="../assets/images/model3.jpg" alt="modelo usando óculos">
+                <img class="slideImage" src="../assets/images/model3.jpg" alt="modelo usando óculos">
 
                 <div class="slideMessage">
                     <h2 class="message">
-                        <span class="m1">BEST-SELLERS</span>
-                        <span class="m2">ÓCULOS LACAVA</span>
-                        <span class="m3">+ coleção nova</span>
+                        <span class="slideText m1">BEST-SELLERS</span>
+                        <span class="slideText m2">ÓCULOS LACAVA</span>
+                        <span class="slideText m3">+ coleção nova</span>
                         <a class="button" href="">COMPRAR AGORA</a>
                     </h2>
                 </div>
             </div>
 
             <div class="slide">
-                <img src="../assets/images/model4.jpg" alt="modelo usando óculos">
+                <img class="slideImage" src="../assets/images/model4.jpg" alt="modelo usando óculos">
 
                 <div class="slideMessage">
                     <h2 class="message">
-                        <span class="m1">SEE THE WORLD</span>
-                        <span class="m2">LACAVA CONCEPT</span>
-                        <span class="m3">veja o mundo através de um LACAVA</span>
+                        <span class="slideText m1">SEE THE WORLD</span>
+                        <span class="slideText m2">LACAVA CONCEPT</span>
+                        <span class="slideText m3">veja o mundo através de um LACAVA</span>
                         <a class="button" href="">VER COLEÇÃO</a>
                     </h2>
                 </div>
             </div>
 
             <div class="slide">
-                <img src="../assets/images/model5.jpg" alt="modelo usando óculos">
+                <img class="slideImage" src="../assets/images/model5.jpg" alt="modelo usando óculos">
 
                 <div class="slideMessage">
                     <h2 class="message">
-                        <span class="m2">LCVCPT</span>
-                        <span class="m3">Sua nova forma de ver o mundo.</span>
+                        <span class="slideText m2">LCVCPT</span>
+                        <span class="slideText m3">Sua nova forma de ver o mundo.</span>
                     </h2>
                 </div>
             </div>
@@ -191,11 +167,8 @@
     <section id="Showcase">
         <!--Titulo da Primeira Aba de Produtos -->
         <h1>Liquidação de Verão</h1>
-        <p>
-            Leve um LACAVA para casa e concorra a um Prêmio <br>
-            <a href="#">Ver Mais
-            <input type="button" value=">"></a>
-        </p>
+        <p> Leve um LACAVA para casa e concorra a um Prêmio</p>
+        <a href="#">Ver Mais ></a>
 
         <!-- Catalogo de Produtos -->
         <div id="firstCatalog">
@@ -292,18 +265,18 @@
 
     <!-- Plano de Fundo do Meio do Site -->
     <picture id="Wallpaper">
-        <img src="../assets/images/model6.jpg" alt="Homem correndo na praia">
+        <img id="imageWallpaper" src="../assets/images/model6.jpg" alt="Homem correndo na praia">
         
         <!-- Botão clicavel que faz aparecer o produto -->
         <div id="buttonClickMe">
-            <img src="../assets/icons/clickMe.png" alt="icone de ClickMe" onclick="wallpaperHiddenProductOpen()">
+            <img id="clickMeIcon" src="../assets/icons/clickMe.png" alt="icone de ClickMe" onclick="wallpaperHiddenProductOpen()">
         </div>
 
         <!-- Div da imagem sobre a imagem-->
         <div>
             <a id="hiddenProduct" href="">
-                <img src="../assets/images/glasses1.png" alt="imagem do produto">
-                <p>
+                <img id="imageHiddenProduct" src="../assets/images/glasses1.png" alt="imagem do produto">
+                <p id="descriptionHiddenProduct">
                     <span class="name">Óculos Redondo</span>
                     <span class="value">R$123,45</span>
                 </p>
@@ -313,7 +286,7 @@
 
     <!-- Midias de video da Loja -->
     <section id="Medias">
-        <h1>Mídias</h1>
+        <h1 id="mediasTitle">Mídias</h1>
 
         <div id="videoScroll">
             <div class="video">
@@ -321,8 +294,8 @@
                 <div class="shadow"></div>
                 <div class="descriptionVideo">
                     <p>
-                        <span class="name">Óculos LACAVA</span>
-                        <span class="value">R$123,45</span>
+                        <span class="nameVideoMedia">Óculos LACAVA</span>
+                        <span class="valueVideoMedia">R$123,45</span>
                     </p>
                 </div>
                 <a href="">
@@ -334,8 +307,8 @@
                 <div class="shadow"></div>
                 <div class="descriptionVideo">
                     <p>
-                        <span class="name">Óculos LACAVA</span>
-                        <span class="value">R$123,45</span>
+                        <span class="nameVideoMedia">Óculos LACAVA</span>
+                        <span class="valueVideoMedia">R$123,45</span>
                     </p>
                 </div>
                 <a href="">
@@ -347,8 +320,8 @@
                 <div class="shadow"></div>
                 <div class="descriptionVideo">
                     <p>
-                        <span class="name">Óculos LACAVA</span>
-                        <span class="value">R$123,45</span>
+                        <span class="nameVideoMedia">Óculos LACAVA</span>
+                        <span class="valueVideoMedia">R$123,45</span>
                     </p>
                 </div>
                 <a href="">
@@ -360,8 +333,8 @@
                 <div class="shadow"></div>
                 <div class="descriptionVideo">
                     <p>
-                        <span class="name">Óculos LACAVA</span>
-                        <span class="value">R$123,45</span>
+                        <span class="nameVideoMedia">Óculos LACAVA</span>
+                        <span class="valueVideoMedia">R$123,45</span>
                     </p>
                 </div>
                 <a href="">
@@ -373,8 +346,8 @@
                 <div class="shadow"></div>
                 <div class="descriptionVideo">
                     <p>
-                        <span class="name">Óculos LACAVA</span>
-                        <span class="value">R$123,45</span>
+                        <span class="nameVideoMedia">Óculos LACAVA</span>
+                        <span class="valueVideoMedia">R$123,45</span>
                     </p>
                 </div>
                 <a href="">
@@ -386,8 +359,8 @@
 
     <!-- Formularios-->
     <section id="Forms">
-        <h1>Nossa Caixa de Entrada</h1>
-        <p>
+        <h1 id="NewsllaterTitle">Nossa Caixa de Entrada</h1>
+        <p id="NewsllaterText">
             Seja o primeiro(a) a receber as novidades e promoções da LACAVA em primeirissíma mão ! <br>
             Não fique fora dessa.
         </p>
@@ -400,16 +373,16 @@
 
     <!-- Redes Sociais -->
     <section id="SocialMedias">
-        <h1>Nossas Redes Sociais</h1>
-        <p>
-            Siga-nos em nossas redes sociais para acompanhar <span>promoções</span> e ver o que nossos clientes estão falando da experiência <span>LACAVA</span>!
+        <h1 id="SocialMediasTitle">Nossas Redes Sociais</h1>
+        <p id="SocialMediasText">
+            Siga-nos em nossas redes sociais para acompanhar <span class="emphasis">promoções</span> e ver o que nossos clientes estão falando da experiência <span class="emphasis">LACAVA</span>!
         </p>
 
-        <h2>
-            <a href="https://www.instagram.com/lacavaconcept._/" target="_blank"><img class="socialMediaIcons" src="../assets/icons/instagram.png" alt="icone do instagram"> @lacavaconcept._</a>
-            <a href="" target="_blank"><img class="socialMediaIcons" src="../assets/icons/tik-tok.png" alt="icone do tiktok"> @tiktokperfillacava</a>
-            <a href="" target="_blank"><img class="socialMediaIcons" src="../assets/icons/whatsapp.png" alt="icone do Whatsapp"> (00)0000-0000</a>
-        </h2>
+        <div id="linksSocialMedias">
+            <a class="SocialLinks" href="https://www.instagram.com/lacavaconcept._/" target="_blank"><img class="socialMediaIcons" src="../assets/icons/instagram.png" alt="icone do instagram"> @lacavaconcept._</a>
+            <a class="SocialLinks" href="" target="_blank"><img class="socialMediaIcons" src="../assets/icons/tik-tok.png" alt="icone do tiktok"> @tiktokperfillacava</a>
+            <a class="SocialLinks" href="" target="_blank"><img class="socialMediaIcons" src="../assets/icons/whatsapp.png" alt="icone do Whatsapp"> (00)0000-0000</a>
+        </div>
     </section>
 
     <!-- Ondas do Rodapé-->
@@ -423,35 +396,35 @@
     <!-- Rodapé do Site-->
     <footer>
         <div id="containerFooter">
-            <ul>
-                <h2>Contato</h2>
-                <li>Segunda à Sexta 09h às 18h</li>
-                <li>lacavaconcept@support.com</li>
-                <li>Ipanema Mall, S/N - Cabo Frio,</li>
-                <li>West Shopping, S/N - Rio de janeiro</li>
+            <ul class="footerList">
+                <h2 class="footerTitle">Contato</h2>
+                <li class="contactText">Segunda à Sexta 09h às 18h</li>
+                <li class="contactText">lacavaconcept@support.com</li>
+                <li class="contactText">Ipanema Mall, S/N - Cabo Frio,</li>
+                <li class="contactText">West Shopping, S/N - Rio de janeiro</li>
             </ul>
-            <ul>
-                <h2>Institucional</h2>
-                <li id="link"><a href="#">Rastrear Pedido</a></li>
-                <li id="link"><a href="#">Política de Compra</a></li>
-                <li id="link"><a href="#">Política de Reembolso</a></li>
-                <li id="link"><a href="#">Política de Frete</a></li>
-                <li id="link"><a href="#">Política de Privacidade</a></li>
-                <li id="link"><a href="#">Termos de Serviço</a></li>
-                <li id="link"><a href="#">Aviso Legal</a></li>
+            <ul class="footerList">
+                <h2 class="footerTitle">Institucional</h2>
+                <li class="links"><a class="links" href="#">Rastrear Pedido</a></li>
+                <li class="links"><a class="links" href="#">Política de Compra</a></li>
+                <li class="links"><a class="links" href="#">Política de Reembolso</a></li>
+                <li class="links"><a class="links" href="#">Política de Frete</a></li>
+                <li class="links"><a class="links" href="#">Política de Privacidade</a></li>
+                <li class="links"><a class="links" href="#">Termos de Serviço</a></li>
+                <li class="links"><a class="links" href="#">Aviso Legal</a></li>
             </ul>
-            <ul>
-                <h2>Perguntas Frequentes</h2>
-                <li id="link"><a href="#">Quem somos?</a></li>
-                <li id="link"><a href="#">Posso limpar meu LACAVA com água e sabão?</a></li>
-                <li id="link"><a href="#">Usar óculos por muito tempo prejudica a visão?</a></li>
-                <li id="link"><a href="#">Existe um modelo certo pro meu rosto?</a></li>
-                <li id="link"><a href="#">Todos os óculos LACAVA protejem contra raios UV?</a></li>
-                <li id="link"><a href="#">Comprei mas não gostei, posso trocar?</a></li>
+            <ul class="footerList">
+                <h2 class="footerTitle">Perguntas Frequentes</h2>
+                <li class="links"><a class="links" href="#">Quem somos?</a></li>
+                <li class="links"><a class="links" href="#">Posso limpar meu LACAVA com água e sabão?</a></li>
+                <li class="links"><a class="links" href="#">Usar óculos por muito tempo prejudica a visão?</a></li>
+                <li class="links"><a class="links" href="#">Existe um modelo certo pro meu rosto?</a></li>
+                <li class="links"><a class="links" href="#">Todos os óculos LACAVA protejem contra raios UV?</a></li>
+                <li class="links"><a class="links" href="#">Comprei mas não gostei, posso trocar?</a></li>
             </ul>
         </div>
         <div id="footer">
-            <address><a href="https://github.com/JoaoVictorGomesSoares/">&copy; 2025,JoãoVictorGomesSoares. <br> Todos os direitos reservados.</a></address>
+            <address><a id="copyright" href="https://github.com/JoaoVictorGomesSoares/">&copy; 2025,JoãoVictorGomesSoares. <br> Todos os direitos reservados.</a></address>
 
             <img src="../assets/icons/credit-cards-flag.png" alt="bandeiras dos cartões de crédito">
         </div>
