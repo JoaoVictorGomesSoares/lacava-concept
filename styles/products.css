@@ -8,7 +8,7 @@ header > nav {
     padding-block: 15px;
     margin: auto;
 }
-img.icone { max-height: 25px; }
+img.icone { height: 25px; }
 
 div#slidePromotions {
     background-color: var(--regular);
@@ -25,9 +25,16 @@ div#slide {
 }
 input { display: none; }
 .slide { width: 50%; transition: .6s; }
-h1, p { color: var(--white); text-align: center;}
-h1 { font-weight: 600; }
-p { font-size: 0.8em; } 
+h1 { 
+    color: var(--white); 
+    text-align: center; 
+    font-weight: 600; 
+}
+p { 
+    color: var(--white); 
+    text-align: center; 
+    font-size: 0.8em; 
+} 
 
 div#navigation {
     position: absolute;
