@@ -1,7 +1,5 @@
 /*PRODUCTS NO MOBILE*/
 
-body { }
-
 header { background-color: var(--regular); }
 header > nav {
     display: flex; flex-flow: row nowrap;
@@ -9,49 +7,45 @@ header > nav {
     width: 90vw;
     padding-block: 15px;
     margin: auto;
-
-    #menu, #logo, #cart { cursor: pointer; }
-    .icone { max-height: 25px; }
 }
+nav > #menu, #logo, #cart { cursor: pointer; }
+nav > .icone { max-height: 25px; }
 
 div#slidePromotions {
     background-color: var(--regular);
     position: relative;
     overflow: hidden;
     padding-block: 1vh;
-
-    #slide {
-        position: relative;
-        width: 200%;
-        height: 100%;
-        display: flex;
-        padding-block: 10px;
-
-        input { display: none; }
-        .slide { width: 50%; transition: .6s; }
-        h1, p { color: var(--white); text-align: center;}
-        h1 { font-weight: 600; }
-        p { font-size: 0.8em; } 
-    }
-    
-    #navigation {
-        position: absolute;
-        top: 50%; transform: translateY(-50%);
-        display: flex; flex-flow: row nowrap;
-        justify-content: space-between; align-items: center;
-        width: 100vw;
-        padding-inline: 20px;
-
-        .arrow {
-            color: var(--white);
-            font-size: 1.2em;
-            border: 1px solid var(--white);
-            border-radius: 50%;
-            width: 30px;
-            padding-inline: 10px;
-            background-color: var(--regular);
-        }
-    }
-    #slide1:checked ~ .s1 { margin-left: 0; }
-    #slide2:checked ~ .s1 { margin-left: -50%; }
 }
+div > div#slide {
+    position: relative;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    padding-block: 10px;
+}
+div#slide > input { display: none; }
+div#slide > .slide { width: 50%; transition: .6s; }
+div#slide > h1, p { color: var(--white); text-align: center;}
+div#slide > h1 { font-weight: 600; }
+div#slide > p { font-size: 0.8em; } 
+
+div#navigation {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    width: 100vw;
+    padding-inline: 20px;
+}
+div > label.arrow {
+    color: var(--white);
+    font-size: 1.2em;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 30px;
+    padding-inline: 10px;
+    background-color: var(--regular);
+}
+#slide1:checked ~ .s1 { margin-left: 0; }
+#slide2:checked ~ .s1 { margin-left: -50%; }
