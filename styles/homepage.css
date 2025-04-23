@@ -60,10 +60,8 @@ header {
     transition: .3s;
 }
 header > nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
     width: 90vw;
     padding-block: 15px;
     margin: auto;
@@ -108,12 +106,10 @@ div#slideWallpaper {
         display: flex;
 
         .bar {
-            width: 13vw;
-            height: 5px;
+            width: 13vw; height: 5px;
             background-color: var(--white);
             margin-inline: 10px;
             border-radius: 5px;
-            cursor: pointer;
         }
     }
     #slide1:checked ~ .s1 { margin-left: 0; }

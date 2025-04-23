@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="../styles/products.css">
+    <link rel="stylesheet" href="../styles/global.css">
+
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho do Site -->
+    <header id="header">
+        <!-- Barra de Navegação -->
+        <nav>
+            <!-- Menu Sanduiche -->
+            <div id="menu">
+                <img class="icone" src="../assets/icons/menu.png" alt="icone de menu" onclick="menuopen()">
+            </div>
+
+            <!-- Logo da Loja -->
+            <div id="logo">
+                <img class="icone" src="../assets/images/lacava-logo-300x60.png" alt="logo da Marca Lacava">
+            </div>
+
+            <!-- Carrinho de compras -->
+            <div id="cart">
+                <a href="cart.html"><img class="icone" src="../assets/icons/cart.png" alt="icone de carrinho"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Promoções do Site -->
+    <div id="slidePromotions">
+        <div id="slide">
+            <input type="radio" name="promotions" id="slide1" checked>
+            <input type="radio" name="promotions" id="slide2">
+
+            <div class="slide s1">
+                <h1>PAGUE 1 LEVE 2 + FRETE GRÁTIS</h1>
+                <p>Parcele sua compra em até 3x sem juros</p>
+            </div>
+
+            <div class="slide">
+                <h1>2 ÓCULOS POR APENAS 246,90</h1>
+                <p>Parcele sua compra em até 3x sem juros</p>
+            </div>
+        </div>
+        <div id="navigation">
+            <label class="arrow" for="slide1"><</label>
+            <label class="arrow" for="slide2">></label>
+        </div>
+    </div>
+</body>
+</html>
