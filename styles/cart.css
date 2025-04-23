@@ -1,1 +1,28 @@
 /*CART NO MOBILE*/
+
+header { 
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    padding: 20px;
+}
+section#containerCart {
+    width: 90vw; height: 85vh;
+    border: 1px solid var(--regular);
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0px 0px 20px var(--shadowColor);
+    display: flex; flex-flow: column nowrap;
+    justify-content: center; align-items: center;
+    font-size: 1.2em;
+    text-align: center;
+
+    h1, a { font-weight: 600;}
+    a#buttonContinueShop {
+        background-color: var(--regular);
+        color: var(--white);
+        padding: 10px 30px;
+        border: none;
+        border-radius: 30px;
+        margin-block: 20px;
+    }
+}

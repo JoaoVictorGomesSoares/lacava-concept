@@ -7,3 +7,6 @@ window.addEventListener("scroll", function() {
     let header = document.querySelector('#header')
     header.classList.toggle('scrolling', window.scrollY > 50)
 })
+
+//Função que faz aparecer o produto escondido do wallpaper da Home
+function wallpaperHiddenProductOpen() { hiddenProduct.style.opacity = '1' }

@@ -225,28 +225,31 @@ picture#Wallpaper {
 
     img { width: 100%; display: block;}
 
-    div#image-message {
-        margin-left: 8px;
-        width: 95vw;
-        background-color: var(--white);
-        border-radius: 30px;
-        padding: 5px 30px;
+    div#buttonClickMe {
+        width: 12vw;
+        padding: 10px;
+        border: 1px solid var(--white); border-radius: 50%;
+        background-color: var(--regular);
         position: absolute;
-        bottom: 10%;
-        box-shadow: 0px 5px 5px var(--shadowColor);
+        top: 35%;
+        left: 65%;
+    }
+    a#hiddenProduct {
+        width: 300px; height: 100px;
+        display: flex; flex-flow: row nowrap;
+        justify-content: space-evenly; align-items: center;
+        left: 50%; transform: translateX(-50%);
+        background-color: var(--white);
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px var(--black);
+        position: absolute;
+        top: 60%;
 
-        h3 { font-weight: 600;}
-        p { font-size: 0.9em; }
-        input {
-            position: absolute;
-            right: 20px;
-            bottom: 15px;
-            background: transparent;
-            color: var(--regular);
-            width: 25px; height: 25px;
-            border: 1px solid var(--regular);
-            border-radius: 50%;
-        }
+        opacity: 0;
+        transition: opacity .3s;
+
+        img {width: 100px;}
+        p { display: flex; flex-flow: column nowrap; }
     }
 }
 
@@ -319,8 +322,17 @@ section#SocialMedias {
     h1 { font-size: 1.5em; font-weight: 400;}
     p { margin-block: 20px;}
     h2 { display: flex; flex-flow: column nowrap;}
-    a { font-weight: 500; white-space: nowrap;}
     span { font-weight: 600;}
+    a { 
+        font-weight: 500; 
+        white-space: nowrap; 
+        position: relative;
+    }
+    img.socialMediaIcons { 
+        width: 15px; 
+        transform: translate(-150%, 40%);
+        position: absolute;
+    }
 }
 
 section#wave {
