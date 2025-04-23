@@ -18,7 +18,7 @@ div#slidePromotions {
     background-color: var(--regular);
     position: relative;
     overflow: hidden;
-    height: 8vh;
+    padding-block: 1vh;
 
     #slide {
         position: relative;
@@ -36,7 +36,7 @@ div#slidePromotions {
     
     #navigation {
         position: absolute;
-        top: 20px;
+        top: 50%; transform: translateY(-50%);
         display: flex; flex-flow: row nowrap;
         justify-content: space-between; align-items: center;
         width: 100vw;
