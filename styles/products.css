@@ -8,8 +8,7 @@ header > nav {
     padding-block: 15px;
     margin: auto;
 }
-nav > #menu, #logo, #cart { cursor: pointer; }
-nav > .icone { max-height: 25px; }
+img.icone { max-height: 25px; }
 
 div#slidePromotions {
     background-color: var(--regular);
@@ -17,18 +16,18 @@ div#slidePromotions {
     overflow: hidden;
     padding-block: 1vh;
 }
-div > div#slide {
+div#slide {
     position: relative;
     width: 200%;
     height: 100%;
     display: flex;
     padding-block: 10px;
 }
-div#slide > input { display: none; }
-div#slide > .slide { width: 50%; transition: .6s; }
-div#slide > h1, p { color: var(--white); text-align: center;}
-div#slide > h1 { font-weight: 600; }
-div#slide > p { font-size: 0.8em; } 
+input { display: none; }
+.slide { width: 50%; transition: .6s; }
+h1, p { color: var(--white); text-align: center;}
+h1 { font-weight: 600; }
+p { font-size: 0.8em; } 
 
 div#navigation {
     position: absolute;
