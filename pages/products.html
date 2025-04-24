@@ -17,50 +17,95 @@
         <nav>
             <!-- Menu Sanduiche -->
             <div id="menu">
-                <img class="icone" src="../assets/icons/menu.png" alt="icone de menu" onclick="menuopen()">
+                <a href="homepage.html" target="_self">< Home</a>
             </div>
 
             <!-- Logo da Loja -->
             <div id="logo">
-                <a href="homepage.html" target="_self"><img class="icone" src="../assets/images/lacava-logo-300x60.png" alt="logo da Marca Lacava"></a>
+                <a href="homepage.html" target="_self"><img class="icon" src="../assets/images/lacava-logo-300x60.png" alt="logo da Marca Lacava"></a>
             </div>
 
             <!-- Carrinho de compras -->
-            <div id="cart">
-                <a href="cart.html"><img class="icone" src="../assets/icons/cart.png" alt="icone de carrinho"></a>
-            </div>
+            <a href="cart.html" target="_self">Comprar ></a>
         </nav>
     </header>
 
     <!-- Promoções do Site -->
     <div id="slidePromotions">
-        <div id="slide">
-            <input type="radio" name="promotions" id="slide1" checked>
-            <input type="radio" name="promotions" id="slide2">
+        <div id="slidePromotionsContainer">
+            <input type="radio" name="promotions" id="promotion1" checked>
+            <input type="radio" name="promotions" id="promotion2">
 
-            <div class="slide s1">
-                <h1>PAGUE 1 LEVE 2 + FRETE GRÁTIS</h1>
-                <p>Parcele sua compra em até 3x sem juros</p>
+            <div class="promotion s1">
+                <h1 id="promotion">PAGUE 1 LEVE 2 + FRETE GRÁTIS</h1>
+                <p id="promotion">Parcele sua compra em até 3x sem juros</p>
             </div>
 
-            <div class="slide">
-                <h1>2 ÓCULOS POR APENAS 246,90</h1>
-                <p>Parcele sua compra em até 3x sem juros</p>
+            <div class="promotion">
+                <h1 id="promotion">2 ÓCULOS POR APENAS 246,90</h1>
+                <p id="promotion">Parcele sua compra em até 3x sem juros</p>
             </div>
         </div>
-        <div id="navigation">
-            <label class="arrow" for="slide1"><</label>
-            <label class="arrow" for="slide2">></label>
+        <div id="navigationArrowsPromotions">
+            <label class="arrowPromotions" for="promotion1"><</label>
+            <label class="arrowPromotions" for="promotion2">></label>
         </div>
     </div>
 
     <!-- Corpo do Site -->
     <main>
+        <!-- Produto (foto e descrição) -->
         <section>
-            <img src="../assets/images/glasses5.png" alt="foto do produto">
-            
+            <div id="slideProduct">
+                <div id="slideProductContainer">
+                    <input type="radio" name="product" id="product1" checked>
+                    <input type="radio" name="product" id="product2">
+                    <input type="radio" name="product" id="product3">
+                    <input type="radio" name="product" id="product4">
+                    <input type="radio" name="product" id="product5">
+                    <input type="radio" name="product" id="product6">
+        
+                    <div class="product s2">
+                        <img class="slideImage" src="../assets/images/glasses5.png" alt="imagem do produto">
+                    </div>
+        
+                    <div class="product">
+                        <img class="slideImage" src="../assets/images/glasses1.png" alt="imagem do produto">
+                    </div>
+        
+                    <div class="product">
+                        <img class="slideImage" src="../assets/images/glasses2.png" alt="imagem do produto">
+                    </div>
+        
+                    <div class="product">
+                        <img class="slideImage" src="../assets/images/glasses3.png" alt="imagem do produto">
+                    </div>
+        
+                    <div class="product">
+                        <img class="slideImage" src="../assets/images/glasses4.png" alt="imagem do produto">
+                    </div>
+        
+                    <div class="product">
+                        <img class="slideImage" src="../assets/images/glasses6.png" alt="imagem do produto">
+                    </div>
+                </div>
+            </div>
+            <div id="navigationImageProducts">
+                <label class="labelImageProcut" for="product1"><img class="iconLabel" src="../assets/images/glasses5.png" alt="icone referente ao produto"></label>
+                <label class="labelImageProcut" for="product2"><img class="iconLabel" src="../assets/images/glasses1.png" alt="icone referente ao produto"></label>
+                <label class="labelImageProcut" for="product3"><img class="iconLabel" src="../assets/images/glasses2.png" alt="icone referente ao produto"></label>
+                <label class="labelImageProcut" for="product4"><img class="iconLabel" src="../assets/images/glasses3.png" alt="icone referente ao produto"></label>
+                <label class="labelImageProcut" for="product5"><img class="iconLabel" src="../assets/images/glasses4.png" alt="icone referente ao produto"></label>
+                <label class="labelImageProcut" for="product6"><img class="iconLabel" src="../assets/images/glasses6.png" alt="icone referente ao produto"></label>
+            </div>
+            <div id="productDescription">
+                <h1 id="name">Óculos LACAVA UV400</h1>
+                <h2 id="value">R$123,45</h2>
+                <p id="quota">3x 41,15 sem juros</p>
+                <a href="cart.html"><input id="BUY" type="button" value="adicionar ao carrinho"></a>
+            </div>
         </section>
+
     </main>
-    
 </body>
 </html>

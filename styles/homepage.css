@@ -66,18 +66,19 @@ li > span { color: var(--white);}
 /* CABEÇALHO! */
 header { 
     position: absolute; 
-    width: 100vw; 
+    width: 100vw;
     z-index: 1;
     transition: .3s;
 }
 header > nav {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
+    height: 10vh;
     width: 90vw;
     padding-block: 2vh;
     margin: auto;
 }
-img.icone { height: 24px; display: block; }
+img.icon { height: 24px; display: block; }
 header.scrolling { 
     background-color: var(--regular);
     position: fixed;
@@ -211,7 +212,7 @@ span.value { color: var(--red); font-size: 0.5em; }
 span.stock { 
     font-size: 0.5em;
     font-style: italic; 
-    background-color: var(--lightGray);
+    background-color: var(--silver);
     border-radius: 20px;
     width: 150px;
     margin: auto;

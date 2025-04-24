@@ -30,7 +30,7 @@ main#containerCart {
 }
 
 footer {
-    position: absolute; bottom: -50px;
+    position: fixed; bottom: -30px;
     width: 100vw; height: 12vh;
     background-color: var(--regular);
     
