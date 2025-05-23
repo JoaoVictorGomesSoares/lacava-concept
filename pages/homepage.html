@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra os óculos exclusivos da Lacava: beleza, bem-estar e promoções imperdíveis.">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/homepage.css">
     <title>Lacava Concept</title>
@@ -12,28 +13,28 @@
     <header id="header">
 
         <!-- MARQUEE DO HEADER -->
-        <section id="Marquee">
-            <!-- MARQUE INFINTA -->
-            <ul class="marquee-content">
-                <li>Pague 1 Leve 2</li>
-                <li>Envio para todo o Brasil!</li>
-                <li>2 Óculos por R$150,00</li>
-                <li>Crie sua conta e tenha acesso a ofertas especiais!</li>
-                <li>Descubra o LACAVA Club e aproveite benefícios exclusivos!</li>
-                <li>Rastreie seus pedidos com facilidade!</li>
-                <li>Faça parte da nossa NewsLetter</li>
-            </ul>
+        <section id="Marquee" aria-label="Mensagens promocionais">
+            <!-- MARQUE INFINITA -->
+            <div class="marquee-content">
+                <span>Pague 1 Leve 2</span>
+                <span>Envio para todo o Brasil!</span>
+                <span>2 Óculos por R$150,00</span>
+                <span>Crie sua conta e tenha acesso a ofertas especiais!</span>
+                <span>Descubra o LACAVA Club e aproveite benefícios exclusivos!</span>
+                <span>Rastreie seus pedidos com facilidade!</span>
+                <span>Faça parte da nossa NewsLetter</span>
+            </div>
 
-            <!-- MARQUEE CLONE -->
-            <ul class="marquee-content" aria-hidden="true">
-                <li>Pague 1 Leve 2</li>
-                <li>Envio para todo o Brasil</li>
-                <li>2 Óculos por R$150,00</li>
-                <li>Crie sua conta e tenha acesso a ofertas especiais!</li>
-                <li>Descubra o LACAVA Club e aproveite benefícios exclusivos!</li>
-                <li>Rastreie seus pedidos com facilidade!</li>
-                <li>Faça parte da nossa NewsLetter</li>
-            </ul>
+            <!-- CLONE DO MARQUEE -->
+            <div class="marquee-content" aria-hidden="true">
+                <span>Pague 1 Leve 2</span>
+                <span>Envio para todo o Brasil</span>
+                <span>2 Óculos por R$150,00</span>
+                <span>Crie sua conta e tenha acesso a ofertas especiais!</span>
+                <span>Descubra o LACAVA Club e aproveite benefícios exclusivos!</span>
+                <span>Rastreie seus pedidos com facilidade!</span>
+                <span>Faça parte da nossa NewsLetter</span>
+            </div>
         </section>
 
         <!-- MENU NAVEGAÇÃO DO HEADER -->
@@ -42,13 +43,20 @@
             <h1>LACAVA</h1>
             <p>O seu espaço de beleza e bem-estar</p>
             <!-- BOTÃO DO MENU SANDUICHE -->
-            <button class="header-button" id="open-menu" onclick="openMenu()"></button>
+            <button id="open-menu" aria-label="Abrir Menu" class="header-button"></button>
 
             <!-- ABA LATERAL DO MENU -->
-            <div id="menu-tab">
+            <div id="menu-tab" role="navigation" aria-label="Menu">
                 <div id="menu-content">
                     <h1 id="menu-tab-h1">LACAVA</h1>
-                    <button id="close-menu" onclick="closeMenu()">X</button>
+                    <!-- BOTÃO FECHAR MENU SANDUICHE -->
+                    <button id="close-menu" aria-label="Fechar menu">
+                        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <line x1="6" y1="6" x2="18" y2="18" stroke="black" stroke-width="2"/>
+                            <line x1="6" y1="18" x2="18" y2="6" stroke="black" stroke-width="2"/>
+                        </svg>
+                    </button>
                     <a href="">Promoções</a>
                     <a href="">Loja</a>
                     <a href="">Comunidade</a>
@@ -61,13 +69,19 @@
             </div>
 
             <!-- BOTÃO DE PESQUISA -->
-            <button class="header-button" id="open-search"></button>
+            <button id="open-search" aria-label="Abrir Pesquisa" class="header-button"></button>
         </nav>
         <!-- ABA DE PESQUISA -->
         <div id="search-tab">
             <div id="search-content">
                 <input type="text" placeholder="Busque em nossa loja" id="search-box-input">
-                <button id="close-search">X</button>
+                <button id="close-search" aria-label="Fechar busca">
+                    <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="6" y1="6" x2="18" y2="18" stroke="white" stroke-width="2"/>
+                        <line x1="6" y1="18" x2="18" y2="6" stroke="white" stroke-width="2"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -79,17 +93,17 @@
             <div id="carousel-content">
                 <div class="carousel-item">
                     <!-- IMAGEM --> 
-                    <img src="../assets/images/carousel1.jpg" alt="Imagem 1">
+                    <img src="../assets/images/carousel1.jpg" alt="Modelo usando óculos da nova coleção Lacava">
                     <!-- TEXTO --> 
                     <div class="carousel-text">
                         <h2>COLEÇÃO NOVA</h2>
                         <h1>COMPRE 1 LEVE 2</h1>
                         <p>Descubra a experiência LACAVA</p>
-                        <button id="btn-shop">VER AGORA</button>
+                        <button class="carousel-button">VER AGORA</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/carousel2.jpg" alt="Imagem 2">
+                    <img src="../assets/images/carousel2.jpg" alt="Modelo usando óculos da Lacava">
                     <!-- TEXTO --> 
                     <div class="carousel-text">
                         <h2>ÓCULOS LACAVA</h2>
@@ -97,32 +111,32 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/carousel3.jpg" alt="Imagem 3">
+                    <img src="../assets/images/carousel3.jpg" alt="Modelo usando óculos mais vendido da Lacava">
                     <!-- TEXTO --> 
                     <div class="carousel-text">
                         <h2>MAIS VENDIDO</h2>
                         <h1>ÓCULOS PRETO</h1>
                         <p>+ Coleção Nova</p>
-                        <button id="btn-shop">COMPRAR AGORA</button>
+                        <button class="carousel-button">COMPRAR AGORA</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/carousel4.jpg" alt="Imagem 4">
+                    <img src="../assets/images/carousel4.jpg" alt="Modelo vendo óculos através de um Lacava">
                     <!-- TEXTO --> 
                     <div class="carousel-text">
                         <h2>Veja o Mundo com um</h2>
                         <h1>LACAVA</h1>
-                        <button id="btn-shop">VER COLEÇÃO</button>
+                        <button class="carousel-button">VER COLEÇÃO</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/images/carousel5.jpg" alt="Imagem 5">
+                    <img src="../assets/images/carousel5.jpg" alt="Modelo usando óculos qeu combinam com você">
                     <!-- TEXTO --> 
                     <div class="carousel-text">
                         <h2>OS MODELOS QUE COMBINAM COM VOCÊ!</h2>
                         <h1>LACAVA CONCEPT</h1>
                         <p>Escolha os seus!</p>
-                        <button id="btn-shop">VER MAIS</button>
+                        <button class="carousel-button">VER MAIS</button>
                     </div>
                 </div>
             </div>

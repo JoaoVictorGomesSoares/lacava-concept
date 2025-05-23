@@ -51,7 +51,7 @@ section#Marquee {
     background-color: var(--homepage-marquee-bg-color);
     color: var(--homepage-marquee-text-color);
 }
-ul.marquee-content {
+div.marquee-content {
     list-style: none;
     min-width: 100%;
     height: var(--marquee-height);
@@ -133,24 +133,23 @@ header > nav#header-content > button#open-search {
     background-image: url('../assets/images/icon-search.png');
 }
 
-button#close-menu {
+button > svg.icon-close { 
     width: 40px;
     height: 40px;
+    padding: 5px;
     background-color: var(--homepage-header-input-bg-color);
-    border: 1px solid black;
+    border: 1px solid;
     border-radius: 50%;
 }
 
-button#close-search {
-    background-color: var(--homepage-header-input-bg-color);
-    width: 40px;
-    height: 40px;
-    border: 1px solid white;
-    color: white;
-    font-size: 1.2em;
-    font-weight: 100;
-    border-radius: 50%;
+button#close-search, button#close-menu {
+    background: none;
+    border: none;
 }
+
+button#close-menu > svg { border-color: black; }
+
+button#close-search > svg { border-color: white; }
 
 input#search-box-input {
     width: calc(100vw - 100px);
@@ -309,7 +308,7 @@ main > section#carousel > div#carousel-content > div.carousel-item > div.carouse
     font-weight: 100;
 }
 
-main > section#carousel > div#carousel-content > div.carousel-item > div.carousel-text > button {
+main > section#carousel > div#carousel-content > div.carousel-item > div.carousel-text > button.carousel-button {
     padding: 10px 20px;
     background-color: transparent;
     color: var(--homepage-carousel-text-color);

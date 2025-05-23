@@ -1,15 +1,19 @@
 const menuTab = document.getElementById("menu-tab");
+
 // Abrir e Fechar Menu Hamburguer
-function openMenu() {
+// Abre
+document.getElementById('open-menu').addEventListener('click', () => { 
     menuTab.style.transform = "translateX(0)";
     console.log("Abriu Menu");
-}
-function closeMenu() {
+});
+// Fecha
+document.getElementById('close-menu').addEventListener('click', () => {
     menuTab.style.transform = "translateX(-100%)";
     console.log("Fechou Menu");
-}
+});
 
 // Abrir e Fechar Pesquisa
+// Abre
 document.getElementById("open-search").addEventListener('focus', () => {
     document.getElementById("header-content").classList.add('hidden-header'); // Esconde o header{
     setTimeout(() => {
@@ -19,7 +23,7 @@ document.getElementById("open-search").addEventListener('focus', () => {
     }, 100);  // Espera 0.1s para fazer a transição
     console.log("Abriu Pesquisa");
 });
-
+// Fecha
 document.getElementById("close-search").addEventListener('click', () => {
     document.getElementById("search-tab").classList.remove('active-search-tab');  // Faz desaparecer com transição
     setTimeout(() => {
@@ -35,8 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   startSwipeInterval();
 });
 
-let counter = 0;// O contador é usado para controlar a posição do slider 
-const indicators = document.querySelectorAll('.indicator');// constante indicators recebe o elemento com a classe '.indicator'
+let counter = 0;// O contador é usado para controlar a posição do slider
 
 // A função slider é responsável por mover o slider para a próxima imagem
 function swipeSlide() {
