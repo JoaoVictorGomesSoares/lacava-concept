@@ -6,9 +6,138 @@
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/homepage.css">
     <title>Lacava Concept</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    hello world
-    <h1>Bem-vindo ao Lacava Concept</h1>
+    <header id="header">
+
+        <!-- MARQUEE DO HEADER -->
+        <section id="Marquee">
+            <!-- MARQUE INFINTA -->
+            <ul class="marquee-content">
+                <li>Pague 1 Leve 2</li>
+                <li>Envio para todo o Brasil!</li>
+                <li>2 Óculos por R$150,00</li>
+                <li>Crie sua conta e tenha acesso a ofertas especiais!</li>
+                <li>Descubra o LACAVA Club e aproveite benefícios exclusivos!</li>
+                <li>Rastreie seus pedidos com facilidade!</li>
+                <li>Faça parte da nossa NewsLetter</li>
+            </ul>
+
+            <!-- MARQUEE CLONE -->
+            <ul class="marquee-content" aria-hidden="true">
+                <li>Pague 1 Leve 2</li>
+                <li>Envio para todo o Brasil</li>
+                <li>2 Óculos por R$150,00</li>
+                <li>Crie sua conta e tenha acesso a ofertas especiais!</li>
+                <li>Descubra o LACAVA Club e aproveite benefícios exclusivos!</li>
+                <li>Rastreie seus pedidos com facilidade!</li>
+                <li>Faça parte da nossa NewsLetter</li>
+            </ul>
+        </section>
+
+        <!-- MENU NAVEGAÇÃO DO HEADER -->
+        <nav id="header-content">
+            <!-- LOGO E TEXTO -->
+            <h1>LACAVA</h1>
+            <p>O seu espaço de beleza e bem-estar</p>
+            <!-- BOTÃO DO MENU SANDUICHE -->
+            <button class="header-button" id="open-menu" onclick="openMenu()"></button>
+
+            <!-- ABA LATERAL DO MENU -->
+            <div id="menu-tab">
+                <div id="menu-content">
+                    <h1 id="menu-tab-h1">LACAVA</h1>
+                    <button id="close-menu" onclick="closeMenu()">X</button>
+                    <a href="">Promoções</a>
+                    <a href="">Loja</a>
+                    <a href="">Comunidade</a>
+                    <a href="">LACAVA Club</a>
+                    <a href="">Guia de Rostos</a>
+                    <a href="">Rastreio</a>
+                    <a href="">Conta</a>
+                    <a href="">Quem somos</a>
+                </div>
+            </div>
+
+            <!-- BOTÃO DE PESQUISA -->
+            <button class="header-button" id="open-search"></button>
+        </nav>
+        <!-- ABA DE PESQUISA -->
+        <div id="search-tab">
+            <div id="search-content">
+                <input type="text" placeholder="Busque em nossa loja" id="search-box-input">
+                <button id="close-search">X</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- CARROSSEL DE IMAGENS -->
+        <section id="carousel">
+            <!-- CONTEUDO DO CARROSEL -->
+            <div id="carousel-content">
+                <div class="carousel-item">
+                    <!-- IMAGEM --> 
+                    <img src="../assets/images/carousel1.jpg" alt="Imagem 1">
+                    <!-- TEXTO --> 
+                    <div class="carousel-text">
+                        <h2>COLEÇÃO NOVA</h2>
+                        <h1>COMPRE 1 LEVE 2</h1>
+                        <p>Descubra a experiência LACAVA</p>
+                        <button id="btn-shop">VER AGORA</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/carousel2.jpg" alt="Imagem 2">
+                    <!-- TEXTO --> 
+                    <div class="carousel-text">
+                        <h2>ÓCULOS LACAVA</h2>
+                        <h1>2 PELO PREÇO DE 1</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/carousel3.jpg" alt="Imagem 3">
+                    <!-- TEXTO --> 
+                    <div class="carousel-text">
+                        <h2>MAIS VENDIDO</h2>
+                        <h1>ÓCULOS PRETO</h1>
+                        <p>+ Coleção Nova</p>
+                        <button id="btn-shop">COMPRAR AGORA</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/carousel4.jpg" alt="Imagem 4">
+                    <!-- TEXTO --> 
+                    <div class="carousel-text">
+                        <h2>Veja o Mundo com um</h2>
+                        <h1>LACAVA</h1>
+                        <button id="btn-shop">VER COLEÇÃO</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/carousel5.jpg" alt="Imagem 5">
+                    <!-- TEXTO --> 
+                    <div class="carousel-text">
+                        <h2>OS MODELOS QUE COMBINAM COM VOCÊ!</h2>
+                        <h1>LACAVA CONCEPT</h1>
+                        <p>Escolha os seus!</p>
+                        <button id="btn-shop">VER MAIS</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INDICADORES DO CARROSEL -->
+            <div id="carousel-indicators">
+                <div class="indicator active" data-target="0"></div>
+                <div class="indicator" data-target="1"></div>
+                <div class="indicator" data-target="2"></div>
+                <div class="indicator" data-target="3"></div>
+                <div class="indicator" data-target="4"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../scripts/homepage.js"></script>
 </body>
 </html>
