@@ -9,27 +9,23 @@ function closeMenu() {
     console.log("Fechou Menu");
 }
 
-const inputOpenSearch = document.getElementById("open-search");
-const inputCloseSearch = document.getElementById("close-search");
-const searchTab = document.getElementById("search-tab");
-const headerContent = document.getElementById("header-content");
 // Abrir e Fechar Pesquisa
-inputOpenSearch.addEventListener('focus', () => {
-    headerContent.classList.add('hidden-header'); // Esconde o header{
+document.getElementById("open-search").addEventListener('focus', () => {
+    document.getElementById("header-content").classList.add('hidden-header'); // Esconde o header{
     setTimeout(() => {
-        headerContent.style.height = '0';  // Esconde o header
-        searchTab.style.height = 'var(--header-nav-height)';  // Faz aparecer o elemento   
-        searchTab.classList.add('active-search-tab');  // Faz aparecer com transição
+        document.getElementById("header-content").style.height = '0';  // Esconde o header
+        document.getElementById("search-tab").style.height = 'var(--header-nav-height)';  // Faz aparecer o elemento   
+        document.getElementById("search-tab").classList.add('active-search-tab');  // Faz aparecer com transição
     }, 100);  // Espera 0.1s para fazer a transição
     console.log("Abriu Pesquisa");
 });
 
-inputCloseSearch.addEventListener('click', () => {
-    searchTab.classList.remove('active-search-tab');  // Faz desaparecer com transição
+document.getElementById("close-search").addEventListener('click', () => {
+    document.getElementById("search-tab").classList.remove('active-search-tab');  // Faz desaparecer com transição
     setTimeout(() => {
-        headerContent.style.height = 'var(--header-nav-height)';  // Mostra o header
-        searchTab.style.height = '0';  // Faz desaparecer o elemento
-        headerContent.classList.remove('hidden-header'); // Mostra o header
+        document.getElementById("header-content").style.height = 'var(--header-nav-height)';  // Mostra o header
+        document.getElementById("search-tab").style.height = '0';  // Faz desaparecer o elemento
+        document.getElementById("header-content").classList.remove('hidden-header'); // Mostra o header
     }, 100);  // Mesma duração da transição (0.1s = 100ms)
     console.log("Fechou Pesquisa");
 });
@@ -40,8 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 let counter = 0;// O contador é usado para controlar a posição do slider 
-const indicators = document.querySelectorAll('.indicator');// Atualiza os indicadores
-const carouselContent = document.querySelector('#carousel-content');// Seleciona o conteúdo do carrossel
+const indicators = document.querySelectorAll('.indicator');// constante indicators recebe o elemento com a classe '.indicator'
 
 // A função slider é responsável por mover o slider para a próxima imagem
 function swipeSlide() {
@@ -55,13 +50,13 @@ function swipeSlide() {
         // Se sim, reinicia o contador para 0
         counter = 0;
         console.log('Avançando para imagem 1');
-        carouselContent.style.transform = `translateX(0)`
+        document.querySelector('#carousel-content').style.transform = `translateX(0)`
     } else {
         // Caso contrário, move o slider para a próxima imagem
-       carouselContent.style.transform = `translateX(${-counter * 100}vw)`;
+       document.querySelector('#carousel-content').style.transform = `translateX(${-counter * 100}vw)`;
     }
     // Remove a classe 'active' de todos os indicadores e adiciona ao indicador correspondente ao contador atual
-    indicators.forEach((indicators, index) => {
+    document.querySelectorAll('.indicator').forEach((indicators, index) => {
         if (index === counter) {
             indicators.classList.add('active');
         } else {
@@ -74,7 +69,7 @@ let touchstartpositionX = 0; // Variável para armazenar a posição do toque in
 let touchendpositionX = 0; // Variável para armazenar a posição do toque final
 
 // Adiciona um evento de toque para detectar o ponto de início do movimento
-carouselContent.addEventListener('touchstart', function(evento) {
+document.querySelector('#carousel-content').addEventListener('touchstart', function(evento) {
     touchstartpositionX = evento.touches[0].clientX; // Armazena a posição do toque inicial
     pauseSwipeInterval(); // Pausa o intervalo de deslizamento
     resetSwipeInterval(); // Reinicia o intervalo de deslizamento
@@ -82,7 +77,7 @@ carouselContent.addEventListener('touchstart', function(evento) {
 );
 
 // Adiciona um evento de toque para detectar o ponto final do movimento
-carouselContent.addEventListener('touchend', function(evento) {
+document.querySelector('#carousel-content').addEventListener('touchend', function(evento) {
     touchendpositionX = evento.changedTouches[0].clientX;
     handleSwipe(); // Chama a função handleSwipe para calcular a diferença entre os toques
     resetSwipeInterval(); // Reinicia o intervalo de deslizamento
@@ -102,13 +97,13 @@ function handleSwipe() {
         // Verifica se o contador é menor que 0
         if (counter < 0) {
             counter = 4;
-            carouselContent.style.transform = `translateX(${-counter * 100}vw)`; // Move o slider para a ultima anterior
+            document.querySelector('#carousel-content').style.transform = `translateX(${-counter * 100}vw)`; // Move o slider para a ultima anterior
         } else {
-            carouselContent.style.transform = `translateX(${-counter * 100}vw)`; // Move o slider para a imagem anterior
+            document.querySelector('#carousel-content').style.transform = `translateX(${-counter * 100}vw)`; // Move o slider para a imagem anterior
         }
 
         // Atualiza os indicadores
-        indicators.forEach((indicators, index) => {
+        document.querySelectorAll('.indicator').forEach((indicators, index) => {
             if (index === counter) {
                 indicators.classList.add('active');
             } else {
