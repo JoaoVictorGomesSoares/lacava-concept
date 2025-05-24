@@ -42,8 +42,15 @@
             <!-- LOGO E TEXTO -->
             <h1>LACAVA</h1>
             <p>O seu espaço de beleza e bem-estar</p>
-            <!-- BOTÃO DO MENU SANDUICHE -->
-            <button id="open-menu" aria-label="Abrir Menu" class="header-button"></button>
+            <!-- BOTÃO ABRIR MENU SANDUICHE -->
+            <button id="open-menu" aria-label="Abrir Menu" class="header-button">
+                <!-- ÍCONE ABRIR -->
+                <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4" y1="6" x2="20" y2="6" stroke="white" stroke-width="2"/>
+                    <line x1="4" y1="12" x2="20" y2="12" stroke="white" stroke-width="2"/>
+                    <line x1="4" y1="18" x2="20" y2="18" stroke="white" stroke-width="2"/>
+                </svg>
+            </button>
 
             <!-- ABA LATERAL DO MENU -->
             <div id="menu-tab" role="navigation" aria-label="Menu">
@@ -51,8 +58,8 @@
                     <h1 id="menu-tab-h1">LACAVA</h1>
                     <!-- BOTÃO FECHAR MENU SANDUICHE -->
                     <button id="close-menu" aria-label="Fechar menu">
-                        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <!-- ICONE FECHAR -->
+                        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line x1="6" y1="6" x2="18" y2="18" stroke="black" stroke-width="2"/>
                             <line x1="6" y1="18" x2="18" y2="6" stroke="black" stroke-width="2"/>
                         </svg>
@@ -68,14 +75,23 @@
                 </div>
             </div>
 
-            <!-- BOTÃO DE PESQUISA -->
-            <button id="open-search" aria-label="Abrir Pesquisa" class="header-button"></button>
+            <!-- BOTÃO ABRIR PESQUISA -->
+            <button id="open-search" aria-label="Abrir Pesquisa" class="header-button">
+                <!-- ÍCONE ABRIR -->
+                <svg class="icon-search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10.5" cy="10.5" r="7.5" stroke="white" stroke-width="2"/>
+                    <line x1="16.5" y1="16.5" x2="22.5" y2="22.5" stroke="white" stroke-width="2"/>
+                </svg>
+            </button>
         </nav>
         <!-- ABA DE PESQUISA -->
         <div id="search-tab">
             <div id="search-content">
+                <!-- BARRA DE PESQUISA -->
                 <input type="text" placeholder="Busque em nossa loja" id="search-box-input">
+                <!-- BOTÃO FECHAR PESQUISA -->
                 <button id="close-search" aria-label="Fechar busca">
+                    <!-- ICONE FECHAR -->
                     <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <line x1="6" y1="6" x2="18" y2="18" stroke="white" stroke-width="2"/>

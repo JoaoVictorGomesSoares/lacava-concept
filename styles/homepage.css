@@ -19,11 +19,13 @@
     --homepage-div-indicatorActive-bg-color: #fff;
     --homepage-carousel-text-color: #fff;
 
-    --marquee-height: 8vh;
-    --marquee-max-height: 60px;
-    --gap-marquee: 80px;
+    --marquee-height: 3vh;
+    --marquee-max-height: 50px;
+    --marquee-min-height: 30px;
+    --gap-marquee: 50px;
     --header-nav-height: 10vh;
     --header-nav-max-height: 80px;
+    --header-nav-min-height: 60px;
     --header-nav-width: 100vw;
 }
 
@@ -39,11 +41,11 @@ body {
 
 section#Marquee {
     position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: 85%;
+    margin: auto;
     height: var(--marquee-height);
     max-height: var(--marquee-max-height);
+    min-height: var(--marquee-min-height);
     display: flex;
     flex-flow: row nowrap;
     gap: var(--gap-marquee);
@@ -56,15 +58,17 @@ div.marquee-content {
     min-width: 100%;
     height: var(--marquee-height);
     max-height: var(--marquee-max-height);
-    line-height: var(--marquee-max-height);
+    min-height: var(--marquee-min-height);
+    line-height: auto;
     font-family: var(--homepage-font);
-    font-size: 1em;
+    font-size: 0.6em;
     font-weight: 900;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
     flex-shrink: 0;
-    animation: marquee 25s linear infinite;
+    animation: marquee 20s linear infinite;
     gap: var(--gap-marquee);
 }
 
@@ -83,13 +87,14 @@ header#header {
 header > nav#header-content {
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.5s ease;
+    transition: all 0.1s ease;
     background-color: var(--homepage-header-bg-color);
     font-family: var(--homepage-font);
     position: relative;
     width: var(--header-nav-width);
     height: var(--header-nav-height);
     max-height: var(--header-nav-max-height);
+    min-height: var(--header-nav-min-height);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -99,6 +104,7 @@ header > nav#header-content {
 header > nav#header-content.hidden-header {
     opacity: 0;
     visibility: hidden;
+    transition: all 0.1s ease;
 }
 
 header > nav#header-content > h1 {
@@ -123,15 +129,9 @@ header > nav#header-content > button.header-button {
     transform: translateY(-50%);
 }
 
-header > nav#header-content > button#open-menu {
-    left: 15px;
-    background-image: url('../assets/images/icon-menu.png');
-}
+header > nav#header-content > button#open-menu { left: 15px; }
 
-header > nav#header-content > button#open-search {
-    right: 15px;
-    background-image: url('../assets/images/icon-search.png');
-}
+header > nav#header-content > button#open-search { right: 15px; }
 
 button > svg.icon-close { 
     width: 40px;
@@ -158,9 +158,12 @@ input#search-box-input {
     border: none;
     border-bottom: 1px solid white;
     padding: 10px;
+}
+
+input#search-box-input::placeholder {
+    color: var(--homepage-header-text-color);
     font-size: 1em;
     font-weight: 100;
-    color: var(--homepage-header-text-color);
 }
 
 header > nav#header-content > div#menu-tab {
@@ -177,19 +180,22 @@ header > nav#header-content > div#menu-tab {
 }
 
 header > div#search-tab {
+    display: none;
     opacity: 0;
     visibility: hidden;
     width: var(--header-nav-width);
-    height: 0;
+    height: var(--header-nav-height);
     max-height: var(--header-nav-max-height);
+    min-height: var(--header-nav-min-height);
     background-color: var(--homepage-search-tab-bg-color);
     color: var(--homepage-search-tab-text-color);
-    transition: opacity 0.5s ease;
+    transition: all 0.1s ease;
 }
 
 header > div#search-tab.active-search-tab {
     opacity: 1;
     visibility: visible;
+    transition: all 0.1s ease;
 }
 
 header > nav#header-content > div#menu-tab > div#menu-content {
@@ -202,6 +208,7 @@ header > nav#header-content > div#menu-tab > div#menu-content {
     gap: 5vh;
     font-family: var(--homepage-font);
     align-items: start; 
+    overflow-y: auto;
 }
 
 header > div#search-tab > div#search-content {
